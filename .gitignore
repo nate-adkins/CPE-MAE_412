@@ -1,2 +1,10 @@
 *.csv
 paths
+
+/build/
+/dist/
+/*.spec
+
+*.log
+*.pyc
+*.pyo

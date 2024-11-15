@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog, simpledialog, PhotoImage
+from tkinter import filedialog, simpledialog
 import csv
 
 DELETE_BG_COLOR = "#ff4d4d"
@@ -19,7 +19,6 @@ class ReorderListApp:
         root.geometry("1024x768")
         root.minsize(1024, 768)
         root.configure(bg="lightblue")
-        root.iconbitmap("transparent_icon.ico")
 
         canvas_size = DEFAULT_CANVAS_SIZE
         canvas_height = canvas_width = canvas_size
@@ -28,7 +27,7 @@ class ReorderListApp:
         listbox_frame = tk.Frame(root)
         listbox_frame.grid(row=0, column=0, padx=10, pady=10, sticky="ns")  
 
-        self.listbox = tk.Listbox(listbox_frame, selectmode=tk.SINGLE, width=listbox_width, height=MIN_LISTBOX_HEIGHT, activestyle="none")
+        self.listbox = tk.Listbox(listbox_frame, selectmode=tk.SINGLE, width=listbox_width, height=MIN_LISTBOX_HEIGHT, activestyle="none",border=0, borderwidth=0, highlightthickness=0)
         self.listbox.grid(row=0, column=0, sticky="n") 
 
         self.scrollbar = tk.Scrollbar(listbox_frame, orient=tk.VERTICAL, command=self.listbox.yview)
@@ -40,26 +39,32 @@ class ReorderListApp:
         self.listbox.bind("<Button-1>", self.start_drag)
         self.listbox.bind("<B1-Motion>", self.drag)
         self.listbox.bind("<ButtonRelease-1>", self.stop_drag)
-        self.listbox.bind("<Delete>", self.delete_selected_item)
+        self.root.bind("<Delete>", self.delete_selected_item)
         self.listbox.bind("<Button-3>", self.show_context_menu)
         
-        self.canvas = tk.Canvas(self.root, width=canvas_width, height=canvas_height, bg='white', border=0, borderwidth=0,)
+        self.canvas = tk.Canvas(self.root, width=canvas_width, height=canvas_height, bg='white', border=0, borderwidth=0, highlightthickness=0)
         self.canvas.grid(row=0, column=1, padx=10, pady=10)
 
         self.canvas.bind("<Button-1>", self.canvas_click)
-        self.canvas.bind("<Button-3>", self.show_canvas_context_menu)
+        self.canvas.bind("<Button-3>", self.show_context_menu)
+        
+        self.root.bind("<KeyPress-Left>", self.move_selected_point)
+        self.root.bind("<KeyPress-Right>", self.move_selected_point)
+        self.root.bind("<KeyPress-Up>", self.move_selected_point)
+        self.root.bind("<KeyPress-Down>", self.move_selected_point)
+        
+        self.canvas.focus_set()
+
 
         self.point_radius = DEFAULT_POINT_RADIUS
         self.items = []
         self.selected_index = None
         self.dragged_index = None
 
-        self.error_label = tk.Label(self.root, text="", fg="red", bg="black", width=50, height=2, anchor="w")
+        self.error_label = tk.Label(self.root, text="", fg="red", bg="black", width=100, height=2, anchor="w")
         self.error_label.grid(row=1, column=0, columnspan=2, padx=10, pady=10, sticky="w")
 
         self.context_menu = tk.Menu(self.root, tearoff=0)
-        # self.context_menu.add_command(label="Add Point", command=self.show_add_point_dialog, activebackground="blue")
-        # self.context_menu.add_separator()
         self.context_menu.add_command(label="Save as CSV", command=self.save_to_csv, activebackground="blue")
         self.context_menu.add_command(label="Load CSV", command=self.load_from_csv, activebackground="blue")
         self.context_menu.add_separator()
@@ -74,9 +79,6 @@ class ReorderListApp:
         self.canvas_context_menu.add_separator()
         self.canvas_context_menu.add_command(label="Delete", command=self.delete_selected_item, activebackground="red")
 
-        self.canvas.bind("<Button-1>", self.canvas_click)
-        self.canvas.bind("<Button-3>", self.show_canvas_context_menu)
-
         self.point_radius = DEFAULT_POINT_RADIUS
         
         self.items = []
@@ -85,31 +87,32 @@ class ReorderListApp:
 
 
     def add_item(self, event):
-        if event:
-            value1, value2 = event.x, event.y
-        item = (value1, value2)
-        self.items.append(item)
-        self.listbox.insert(tk.END, f"{value1}, {value2}")
-        self.listbox.select_clear(0, tk.END)
-        self.listbox.select_set(tk.END)
-        self.selected_index = len(self.items) - 1
+        # Add a new point at the clicked position
+        x, y = event.x, event.y
+        self.items.append((x, y))
+        self.display_error(f"Added point at ({x}, {y})")
+        self.selected_index = len(self.items) - 1  # Select the new point
+        self.update_listbox()
         self.redraw_canvas()
-        self.clear_error()
 
 
     def delete_selected_item(self, event=None):
-        selected_index = self.listbox.curselection()
-        if not selected_index:
-            self.display_error("no point is selected for deletion")
+        if self.selected_index is None:
+            self.display_error("no point selected for deletion")
             return
-        index = selected_index[0]
-        self.display_error(f"deleted point at ({self.items[index][0]},{self.items[index][1]})")
-        self.items.pop(index)
-        self.listbox.delete(index)
-        if self.selected_index == index:
-            self.selected_index = None 
-        elif self.selected_index > index:
-            self.selected_index -= 1
+        
+        # Display the point being deleted
+        x, y = self.items[self.selected_index]
+        self.display_error(f"deleted point at ({x}, {y})")
+        
+        # Delete the selected point
+        self.items.pop(self.selected_index)
+        
+        # Remove the point from the listbox
+        self.update_listbox()
+        
+        # Reset the selected index after deletion
+        self.selected_index = None
         self.redraw_canvas()
 
 
@@ -138,7 +141,7 @@ class ReorderListApp:
         self.items.clear()
         self.listbox.delete(0, tk.END)
         self.redraw_canvas()
-        self.clear_error()
+        self.display_error("cleared the points in the current path:")
 
 
     def highlight_selection(self, event=None):
@@ -152,7 +155,8 @@ class ReorderListApp:
         self.listbox.delete(0, tk.END)
         for item in self.items:
             self.listbox.insert(tk.END, f"{item[0]}, {item[1]}")
-        self.highlight_selection()
+        if self.selected_index is not None:
+            self.listbox.select_set(self.selected_index)
 
 
     def redraw_canvas(self):
@@ -165,34 +169,33 @@ class ReorderListApp:
 
     def canvas_click(self, event):
         for index, (x, y) in enumerate(self.items):
+            # Check if the click is within the point's radius
             if (x - event.x) ** 2 + (y - event.y) ** 2 <= self.point_radius ** 2:
-                self.listbox.select_clear(0, tk.END)
-                self.listbox.select_set(index)
-                self.selected_index = index
-                self.highlight_selection()
-                return
-        self.add_item(event)
+                # Select the item in the listbox
+                self.listbox.select_clear(0, tk.END)  # Clear all selections
+                self.listbox.select_set(index)  # Select the clicked item
+                self.selected_index = index  # Set the selected index
+                self.highlight_selection()  # Update canvas to highlight the selected point
+                return  # Exit the loop once the point is found
+        self.add_item(event)  # If no point was clicked, add a new one
 
 
     def save_to_csv(self):
         if len(self.items) == 0:
-            self.display_error("empty paths cannot be saved")
+            self.display_error("the drawn path is empty, not saving")
             return
         file_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("CSV Files", "*.csv")])
         if file_path:
             try:
                 with open(file_path, mode='w', newline='') as file:
                     writer = csv.writer(file)
-                    # writer.writerow([f"{self.canvas.winfo_height()}", f"{self.canvas.winfo_width()}"])
                     writer.writerow(["x", "y"])
                     writer.writerows(self.items)
-                self.clear_error()
+                self.display_error(f'saved file: {file_path}')
             except Exception as e:
                 self.display_error(f"error saving file: {e}")
 
     def load_from_csv(self):
-        # max_x = 0
-        # max_y = 0
         if len(self.items) != 0:
             self.display_error("the current path needs to be empty to load")
             return
@@ -205,17 +208,12 @@ class ReorderListApp:
                     for row in reader:
                         if len(row) == 2:
                             x, y = int(row[0]), int(row[1])
-                            # max_x = max(max_x,x)
-                            # max_y = max(max_y,y)
                             self.items.append((x, y))
                             self.listbox.insert(tk.END, f"{x}, {y}")
-                    # self.canvas.configure(width=max_x,height=max_y)
                 self.redraw_canvas()
-                self.clear_error()
+                self.display_error(f'loaded file: {file_path}')
             except Exception as e:
                 self.display_error(f"error loading file: {e}")
-            
-
 
     def show_context_menu(self, event):
         self.context_menu.post(event.x_root, event.y_root)
@@ -224,22 +222,24 @@ class ReorderListApp:
     def display_error(self, error_message):
         self.error_label.config(text= " " + error_message)
 
+    def move_selected_point(self, event):
+        if self.selected_index is None:
+            return
 
-    def clear_error(self):
-        self.error_label.config(text="")
+        x, y = self.items[self.selected_index]
 
+        if event.keysym == "Left":
+            x -= 1
+        elif event.keysym == "Right":
+            x += 1
+        elif event.keysym == "Up":
+            y -= 1
+        elif event.keysym == "Down":
+            y += 1
 
-    def show_add_point_dialog(self):
-        value1 = simpledialog.askinteger("Input X Value", "Enter X Value:")
-        value2 = simpledialog.askinteger("Input Y Value", "Enter Y Value:")
-        if value1 is not None and value2 is not None:
-            self.items.append((value1, value2))
-            self.listbox.insert(tk.END, f"{value1}, {value2}")
-            self.redraw_canvas()
-
-
-    def show_canvas_context_menu(self, event):
-        self.canvas_context_menu.post(event.x_root, event.y_root)
+        self.items[self.selected_index] = (x, y)
+        self.update_listbox()
+        self.redraw_canvas()
 
 
     def set_point_radius(self):
