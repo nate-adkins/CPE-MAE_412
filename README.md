@@ -5,6 +5,9 @@
 ![img](./imgs/image.png)
 
 ### To Do
-- Display x,y pos of cursor on canvas in bottom right 
-- Check file read/write works on dist binary 
-- Click and drag for points on canvas 
+- [x] Save and load csv files
+- [x] Adjust coordinate system so bottom left is origin (match english letter writing)
+- [x] Display x and y position of cursor on canvas in bottom right 
+- [x] Error and event messages
+- [x] Lock x and y axis values to currently selected point for placing points 
+- [ ] Click and drag canvas points to reorder 
