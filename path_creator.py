@@ -22,7 +22,6 @@ class ReorderListApp:
         self.root.title("Path Creator")
         root.configure(bg="lightblue")
 
-        # Canvas and Listbox parameters
         self.point_radius = DEFAULT_POINT_RADIUS
         self.arrow_thickness = DEFAULT_ARROW_THICKNESS
         self.arrows_enabled = True
@@ -33,16 +32,13 @@ class ReorderListApp:
         canvas_height = canvas_width = canvas_size
         listbox_width = 12
 
-        # Configure root grid layout
-        self.root.grid_columnconfigure(1, weight=1)  # Right column for canvas to expand
+        self.root.grid_columnconfigure(1, weight=1) 
         self.root.grid_rowconfigure(2, weight=1)
 
-        # Top Frame for instructions label
         top_frame = tk.Frame(root, bg="lightblue")
         top_frame.grid(row=0, column=0, columnspan=2, sticky="ew")
         top_frame.grid_columnconfigure(1, weight=1)
 
-        # Single label for instructions, aligned to top-right
         self.instructions_label = tk.Label(
             top_frame, text="Hover here for Instructions", font=("TkDefaultFont", 12, 'bold'),
             bg="lightblue", anchor='e', justify='right'
@@ -55,9 +51,8 @@ class ReorderListApp:
         )
         self.left_label.grid(row=0, column=0, sticky="w", padx=(10, 10), pady=(10, 0))
 
-        # Tooltip overlay frame
         self.tooltip = tk.Toplevel(root, bg="lightyellow")
-        self.tooltip.withdraw()  # Hide initially
+        self.tooltip.withdraw()
         self.tooltip.overrideredirect(True)
         tooltip_text = (
             "Canvas:\n"
@@ -72,11 +67,9 @@ class ReorderListApp:
         )
         tk.Label(self.tooltip, text=tooltip_text, font=("TkDefaultFont", 10), bg="lightyellow", justify='left').pack()
 
-        # Bind hover events
         self.instructions_label.bind("<Enter>", self.show_tooltip)
         self.instructions_label.bind("<Leave>", self.hide_tooltip)
 
-        # Listbox Frame
         listbox_frame = tk.Frame(root)
         listbox_frame.grid(row=2, column=0, padx=(10,0))
 
@@ -87,7 +80,6 @@ class ReorderListApp:
         )
         self.listbox.grid(row=0, column=0)
 
-        # Scrollbar for Listbox
         self.scrollbar = tk.Scrollbar(listbox_frame, orient=tk.VERTICAL, command=self.listbox.yview)
         self.scrollbar.grid(row=0, column=1, sticky="ns")
         self.listbox.config(yscrollcommand=self.scrollbar.set)
@@ -168,7 +160,6 @@ class ReorderListApp:
         self.selected_index = None
         self.redraw_canvas()
 
-
     def start_drag(self, event):
         self.dragged_index = self.listbox.nearest(event.y)
 
@@ -182,7 +173,6 @@ class ReorderListApp:
                 self.redraw_canvas()
                 self.dragged_index = new_index
                 self.listbox.select_set(new_index)
-
 
     def stop_drag(self, event=None):
         self.dragged_index = None
