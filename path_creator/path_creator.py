@@ -26,6 +26,7 @@ class ReorderListApp:
         self.root = root
         self.root.title("Path Creator")
         root.configure(bg=BLUE)
+        root.resizable(False, False)
         
         self.locked_x = False
         self.locked_y = False
@@ -134,13 +135,13 @@ class ReorderListApp:
         self.canvas_context_menu.add_command(label="     Decrease arrow thickness", command=self.decrease_arrow_thickness, activebackground=BLUE,activeforeground=BLACK)
         self.canvas_context_menu.add_command(label=f"{'Disable arrows' if self.arrows_enabled else 'Enable arrows'}", command=self.set_arrows_state, activebackground=BLUE,activeforeground=BLACK)
         self.canvas_context_menu.add_separator()
-        self.canvas_context_menu.add_command(label=f"{'Lock x axis' if not self.locked_x else 'Unlock x axis'}", command=self.toggle_lock_x, activebackground=BLUE,activeforeground=BLACK)
-        self.canvas_context_menu.add_command(label=f"{'Lock y axis' if not self.locked_y else 'Unlock y axis'}", command=self.toggle_lock_y, activebackground=BLUE,activeforeground=BLACK)
+        self.canvas_context_menu.add_command(label=f"{'Lock selected x value' if not self.locked_x else 'Unlock selected x value'}", command=self.toggle_lock_x, activebackground=BLUE,activeforeground=BLACK)
+        self.canvas_context_menu.add_command(label=f"{'Lock selected y value' if not self.locked_y else 'Unlock selected y value'}", command=self.toggle_lock_y, activebackground=BLUE,activeforeground=BLACK)
         self.canvas_context_menu.add_separator()
         self.canvas_context_menu.add_command(label="Delete selected point", command=self.delete_selected_item, activebackground=RED)
         self.canvas_context_menu.add_separator()
         self.canvas_context_menu.add_command(label="Clear all points", command=self.clear_items, activebackground=RED)  
-        
+    
     def show_tooltip(self, event):
         x = self.instructions_label.winfo_rootx() - (self.tooltip.winfo_reqwidth() - self.instructions_label.winfo_width())
         y = self.instructions_label.winfo_rooty() + self.instructions_label.winfo_reqheight() + 10
@@ -152,8 +153,9 @@ class ReorderListApp:
     
     def add_item(self, event):
         x = event.x; y = self.canvas_height - event.y; canvas_y = event.y
-        if self.locked_x: x = self.items[self.selected_index][0]
-        if self.locked_y: y = self.items[self.selected_index][1]; canvas_y = self.items[self.selected_index][2]
+        if len(self.items) > 0:
+            if self.locked_x: x = self.items[self.selected_index][0]
+            if self.locked_y: y = self.items[self.selected_index][1]; canvas_y = self.items[self.selected_index][2]
         self.items.append((x, y, canvas_y))
         self.display_error(f"Added point at ({x}, {y})")
         self.selected_index = len(self.items) - 1
@@ -208,6 +210,7 @@ class ReorderListApp:
         self.listbox.delete(0, tk.END)
         for item in self.items: self.listbox.insert(tk.END, f"{item[0]}, {item[1]}")
         if self.selected_index is not None: self.listbox.select_set(self.selected_index)
+        self.listbox.yview_moveto(1)
 
 
     def redraw_canvas(self):
@@ -291,10 +294,9 @@ class ReorderListApp:
         x, y, canvas_y = self.items[self.selected_index]
         if event.keysym == "Left": x -= 1
         elif event.keysym == "Right": x += 1
-        elif event.keysym == "Up": y -= 1; canvas_y -= 1
-        elif event.keysym == "Down": y += 1; canvas_y += 1
+        elif event.keysym == "Up": y += 1; canvas_y -= 1
+        elif event.keysym == "Down": y -= 1; canvas_y += 1
         self.items[self.selected_index] = (x, y,canvas_y)
-        self.display_error(f"point ({x-1},{y-1}) moved to ({x},{y})")
         self.update_listbox(); self.redraw_canvas()
             
             
@@ -358,13 +360,13 @@ class ReorderListApp:
         
     def toggle_lock_x(self):
         self.locked_x = not self.locked_x
-        self.display_error(f"{'x axis was locked' if self.locked_x else 'x axis was unlocked'}")
-        self.canvas_context_menu.entryconfig(9, label=f"{'Unlock x axis' if self.locked_x else 'Lock x axis'}")
+        self.display_error(f"{'x value was locked' if self.locked_x else 'x value was unlocked'}")
+        self.canvas_context_menu.entryconfig(9, label=f"{'Lock selected x value' if not self.locked_x else 'Unlock selected x value'}")
             
     def toggle_lock_y(self):
         self.locked_y = not self.locked_y
-        self.display_error(f"{'y axis was locked' if self.locked_y else 'y axis was unlocked'}")
-        self.canvas_context_menu.entryconfig(10, label=f"{'Unlock y axis' if self.locked_y else 'Lock y axis'}")
+        self.display_error(f"{'y value was locked' if self.locked_y else 'y value was unlocked'}")
+        self.canvas_context_menu.entryconfig(10, label=f"{'Lock selected y value' if not self.locked_y else 'Unlock selected y value'}")
 
 
 if __name__ == "__main__":
