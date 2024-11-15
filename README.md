@@ -2,4 +2,4 @@
 
 ## Path Creator
 
-![img](image.png)
+![img](./imgs/image.png)
