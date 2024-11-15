@@ -1,14 +1,10 @@
 import tkinter as tk
-from tkinter import filedialog, simpledialog
+from tkinter import filedialog
 import csv
 
-DELETE_BG_COLOR = "#ff4d4d"
-DELETE_PRESS_COLOR = "#ff9d9d"
+RED = "#ff4d4d"
 
-BUTTON_BG_COLOR = "#4d4dff"
-BUTTON_PRESS_COLOR = "#9d9dff"
-
-MIN_LISTBOX_HEIGHT = 40
+MIN_LISTBOX_HEIGHT = 30
 
 DEFAULT_CANVAS_SIZE = 600
 
@@ -24,65 +20,76 @@ class ReorderListApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Path Creator")
-        root.geometry("768x1024")
-        root.minsize(768, 1024)
         root.configure(bg="lightblue")
-        
+
+        # Canvas and Listbox parameters
         self.point_radius = DEFAULT_POINT_RADIUS
         self.arrow_thickness = DEFAULT_ARROW_THICKNESS
         self.arrows_enabled = True
-        
         self.items = []
         self.selected_index = None
         self.dragged_index = None
-        
-
         canvas_size = DEFAULT_CANVAS_SIZE
         canvas_height = canvas_width = canvas_size
         listbox_width = 12
 
-        tutorial_font_size = 12
+        # Configure root grid layout
+        self.root.grid_columnconfigure(1, weight=1)  # Right column for canvas to expand
+        self.root.grid_rowconfigure(2, weight=1)
+
+        # Top Frame for instructions label
         top_frame = tk.Frame(root, bg="lightblue")
-        top_frame.grid(row=0, column=0, columnspan=2, pady=10, sticky="ew")
-        
-        self.info_label = tk.Label(top_frame, text="   Path Creator - Instructions:", font=("TkDefaultFont", tutorial_font_size, 'bold'), bg="lightblue", anchor='w')
-        self.info_label.grid(row=0, column=0, sticky="ew")
-        
-        self.info_label0 = tk.Label(top_frame, text="         Canvas:", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label0.grid(row=1, column=0, sticky="ew")
-        
-        self.info_label1 = tk.Label(top_frame, text="               Left-click the canvas to add a new point to the list. Left-click a point on the canvas to select it.", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label1.grid(row=2, column=0, sticky="ew")
+        top_frame.grid(row=0, column=0, columnspan=2, sticky="ew")
+        top_frame.grid_columnconfigure(1, weight=1)
 
-        self.info_label2 = tk.Label(top_frame, text="               When a point is selected, arrow keys can be used for fine location adjustment of the point.", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label2.grid(row=3, column=0, sticky="ew")
+        # Single label for instructions, aligned to top-right
+        self.instructions_label = tk.Label(
+            top_frame, text="Hover here for Instructions", font=("TkDefaultFont", 12, 'bold'),
+            bg="lightblue", anchor='e', justify='right'
+        )
+        self.instructions_label.grid(row=0, column=1, sticky="e", padx=(10, 10), pady=(10, 0))
+        
+        self.left_label = tk.Label(
+            top_frame, text="Path Creator", font=("TkDefaultFont", 12, 'bold'),
+            bg="lightblue", anchor='w', justify='left'
+        )
+        self.left_label.grid(row=0, column=0, sticky="w", padx=(10, 10), pady=(10, 0))
 
-        self.info_label3 = tk.Label(top_frame, text="               Right-click the canvas to customize viewing options.", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label3.grid(row=4, column=0, sticky="ew")
+        # Tooltip overlay frame
+        self.tooltip = tk.Toplevel(root, bg="lightyellow")
+        self.tooltip.withdraw()  # Hide initially
+        self.tooltip.overrideredirect(True)
+        tooltip_text = (
+            "Canvas:\n"
+            "     Left-click the canvas to add a new point to the list. Left-click a point on the canvas to select it.\n"
+            "     When a point is selected, arrow keys can be used for fine location adjustment of the point.\n"
+            "     Right-click the canvas to customize viewing options.\n"
+            "List:\n"
+            "     Left-click the point list to select a point. Click-and-drag to reorder the points.\n"
+            "     Right-click the list to save and load point lists or to delete the selected point or all points\n"
+            "Debugging:\n"
+            "     Debgging information or previous events are shown in the black text box at the bottom.\n"
+        )
+        tk.Label(self.tooltip, text=tooltip_text, font=("TkDefaultFont", 10), bg="lightyellow", justify='left').pack()
 
-        self.info_label4 = tk.Label(top_frame, text="         List:", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label4.grid(row=5, column=0, sticky="ew")
-        
-        self.info_label5 = tk.Label(top_frame, text="               Left-click the point list to select a point. Click-and-drag to reorder the points.", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label5.grid(row=6, column=0, sticky="ew")
-        
-        self.info_label6 = tk.Label(top_frame, text="               Right-click the list to save and load point lists or to delete the selected point or all points", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label6.grid(row=7, column=0, sticky="ew")
-        
-        self.info_label7 = tk.Label(top_frame, text="         Debugging:", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label7.grid(row=8, column=0, sticky="ew")
-        
-        self.info_label8 = tk.Label(top_frame, text="               Debgging information or previous events are shown in the black text box at the bottom.", font=("TkDefaultFont", tutorial_font_size, ), bg="lightblue", anchor='w')
-        self.info_label8.grid(row=9, column=0, sticky="ew")
+        # Bind hover events
+        self.instructions_label.bind("<Enter>", self.show_tooltip)
+        self.instructions_label.bind("<Leave>", self.hide_tooltip)
 
+        # Listbox Frame
         listbox_frame = tk.Frame(root)
-        listbox_frame.grid(row=2, column=0, padx=10, pady=10, sticky="ns")  
+        listbox_frame.grid(row=2, column=0, padx=(10,0))
 
-        self.listbox = tk.Listbox(listbox_frame, selectmode=tk.SINGLE, width=listbox_width, height=MIN_LISTBOX_HEIGHT, activestyle="none", border=0, borderwidth=0, highlightthickness=0, highlightcolor='lightblue')
-        self.listbox.grid(row=0, column=0, sticky="n") 
+        self.listbox = tk.Listbox(
+            listbox_frame, selectmode=tk.SINGLE, width=listbox_width, height=MIN_LISTBOX_HEIGHT,
+            activestyle="none", border=0, highlightthickness=0, highlightcolor='lightyellow',
+            selectbackground='#ff4d4d', selectforeground='white'
+        )
+        self.listbox.grid(row=0, column=0)
 
+        # Scrollbar for Listbox
         self.scrollbar = tk.Scrollbar(listbox_frame, orient=tk.VERTICAL, command=self.listbox.yview)
-        self.scrollbar.grid(row=0, column=1, sticky="ns")  
+        self.scrollbar.grid(row=0, column=1, sticky="ns")
         self.listbox.config(yscrollcommand=self.scrollbar.set)
 
         self.listbox.bind("<<ListboxSelect>>", self.highlight_selection)
@@ -92,8 +99,8 @@ class ReorderListApp:
         self.root.bind("<Delete>", self.delete_selected_item)
         self.listbox.bind("<Button-3>", self.show_context_menu)
         
-        self.canvas = tk.Canvas(self.root, width=canvas_width, height=canvas_height, bg='white', border=0, borderwidth=0, highlightthickness=0)
-        self.canvas.grid(row=2, column=1, padx=10, pady=10)
+        self.canvas = tk.Canvas(self.root, width=canvas_width, height=canvas_height, bg='white', border=0, borderwidth=0, highlightthickness=0, )
+        self.canvas.grid(row=2, column=1, padx=(10,10), pady=(10,0))
 
         self.canvas.bind("<Button-1>", self.canvas_click)
         self.canvas.bind("<Button-3>", self.show_canvas_context_menu)
@@ -105,32 +112,41 @@ class ReorderListApp:
         
         self.canvas.focus_set()
 
-        self.error_label = tk.Label(self.root, text="", fg="red", bg="black", width=100, height=2, anchor="w")
-        self.error_label.grid(row=3, column=0, columnspan=2, padx=10, pady=10, sticky="w")
+        self.error_label = tk.Label(self.root, text="", fg=RED, bg="black", width=80, height=2, anchor="w")
+        self.error_label.grid(row=3, column=0, columnspan=2, padx=(10,0), pady=(10,10),sticky="w")
 
         self.context_menu = tk.Menu(self.root, tearoff=0)
-        self.context_menu.add_command(label="Save path as csv", command=self.save_to_csv, activebackground="blue")
-        self.context_menu.add_command(label="Load path as csv", command=self.load_from_csv, activebackground="blue")
+        self.context_menu.add_command(label="Save path as csv", command=self.save_to_csv, activebackground="lightblue",activeforeground="black")
+        self.context_menu.add_command(label="Load path as csv", command=self.load_from_csv, activebackground="lightblue",activeforeground="black")
         self.context_menu.add_separator()
-        self.context_menu.add_command(label="Delete selected point", command=self.delete_selected_item, activebackground="red")
+        self.context_menu.add_command(label="Delete selected point", command=self.delete_selected_item, activebackground=RED)
         self.context_menu.add_separator()
-        self.context_menu.add_command(label="Clear all points", command=self.clear_items, activebackground="red")
+        self.context_menu.add_command(label="Clear all points", command=self.clear_items, activebackground=RED)
 
         self.canvas_context_menu = tk.Menu(self.root, tearoff=0)
-        self.canvas_context_menu.add_command(label="Set to default point radius", command=self.set_default_point_radius, activebackground="blue")
-        self.canvas_context_menu.add_command(label="     Increase point radius", command=self.increase_point_radius, activebackground="blue")
-        self.canvas_context_menu.add_command(label="     Decrease point radius", command=self.decrease_point_radius, activebackground="blue")
+        self.canvas_context_menu.add_command(label="Set to default point radius", command=self.set_default_point_radius, activebackground="lightblue",activeforeground="black")
+        self.canvas_context_menu.add_command(label="     Increase point radius", command=self.increase_point_radius, activebackground="lightblue",activeforeground="black")
+        self.canvas_context_menu.add_command(label="     Decrease point radius", command=self.decrease_point_radius, activebackground="lightblue",activeforeground="black")
         self.canvas_context_menu.add_separator()
-        self.canvas_context_menu.add_command(label="Set to default arrow thickness", command=self.set_default_arrow_thickness, activebackground="blue")
-        self.canvas_context_menu.add_command(label="     Increase arrow thickness", command=self.increase_arrow_thickness, activebackground="blue")
-        self.canvas_context_menu.add_command(label="     Decrease arrow thickness", command=self.decrease_arrow_thickness, activebackground="blue")
-        self.canvas_context_menu.add_command(label=f"{'Disable arrows' if self.arrows_enabled else 'Enable arrows'}", command=self.set_arrows_state, activebackground="blue")
+        self.canvas_context_menu.add_command(label="Set to default arrow thickness", command=self.set_default_arrow_thickness, activebackground="lightblue",activeforeground="black")
+        self.canvas_context_menu.add_command(label="     Increase arrow thickness", command=self.increase_arrow_thickness, activebackground="lightblue",activeforeground="black")
+        self.canvas_context_menu.add_command(label="     Decrease arrow thickness", command=self.decrease_arrow_thickness, activebackground="lightblue",activeforeground="black")
+        self.canvas_context_menu.add_command(label=f"{'Disable arrows' if self.arrows_enabled else 'Enable arrows'}", command=self.set_arrows_state, activebackground="lightblue",activeforeground="black")
         self.canvas_context_menu.add_separator()
-        self.canvas_context_menu.add_command(label="Delete selected point", command=self.delete_selected_item, activebackground="red")
+        self.canvas_context_menu.add_command(label="Delete selected point", command=self.delete_selected_item, activebackground=RED)
         self.canvas_context_menu.add_separator()
-        self.canvas_context_menu.add_command(label="Clear all points", command=self.clear_items, activebackground="red")
+        self.canvas_context_menu.add_command(label="Clear all points", command=self.clear_items, activebackground=RED)
+        
+    def show_tooltip(self, event):
+        x = self.instructions_label.winfo_rootx() - (self.tooltip.winfo_reqwidth() - self.instructions_label.winfo_width())
+        y = self.instructions_label.winfo_rooty() + self.instructions_label.winfo_reqheight() + 10
+        self.tooltip.geometry(f"+{x}+{y}")
+        self.tooltip.deiconify()
 
 
+
+    def hide_tooltip(self, event):
+        self.tooltip.withdraw()
     
     def add_item(self, event):
         x, y = event.x, event.y
@@ -206,7 +222,7 @@ class ReorderListApp:
                     self.canvas.create_line(x1, y1, x2, y2, arrow=tk.LAST, width=self.arrow_thickness, fill="gray")
             
             for index, item in enumerate(self.items):
-                color = "red" if index == self.selected_index else "black"
+                color = RED if index == self.selected_index else "gray"
                 self.canvas.create_oval(item[0] - self.point_radius, item[1] - self.point_radius, 
                                         item[0] + self.point_radius, item[1] + self.point_radius, fill=color, outline=color)
 
