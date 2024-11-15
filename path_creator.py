@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog
+from tkinter import filedialog, simpledialog, PhotoImage
 import csv
 
 DELETE_BG_COLOR = "#ff4d4d"
@@ -8,17 +8,33 @@ DELETE_PRESS_COLOR = "#ff9d9d"
 BUTTON_BG_COLOR = "#4d4dff"
 BUTTON_PRESS_COLOR = "#9d9dff"
 
-MIN_LISTBOX_HEIGHT = 10
+MIN_LISTBOX_HEIGHT = 30
+
+DEFAULT_POINT_RADIUS = 6
 
 class ReorderListApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Reorder List GUI")
+        self.root.title("Path Creator")
+        root.geometry("1024x768")
+        root.minsize(1024, 768)
+        root.configure(bg="lightblue")
+        root.iconbitmap("transparent_icon.ico")
 
-        self.listbox = tk.Listbox(self.root, selectmode=tk.SINGLE, width=20, height=MIN_LISTBOX_HEIGHT, activestyle="none")
-        self.listbox.grid(row=0, column=0, pady=10)
+        canvas_size = 600
+        canvas_height = canvas_width = canvas_size
+        listbox_width = 12
 
-        self.items = []
+        listbox_frame = tk.Frame(root)
+        listbox_frame.grid(row=0, column=0, padx=10, pady=10, sticky="ns")  
+
+        self.listbox = tk.Listbox(listbox_frame, selectmode=tk.SINGLE, width=listbox_width, height=MIN_LISTBOX_HEIGHT, activestyle="none")
+        self.listbox.grid(row=0, column=0, sticky="n") 
+
+        self.scrollbar = tk.Scrollbar(listbox_frame, orient=tk.VERTICAL, command=self.listbox.yview)
+        self.scrollbar.grid(row=0, column=1, sticky="ns")  
+        self.listbox.config(yscrollcommand=self.scrollbar.set)
+        
 
         self.listbox.bind("<<ListboxSelect>>", self.highlight_selection)
         self.listbox.bind("<Button-1>", self.start_drag)
@@ -26,71 +42,89 @@ class ReorderListApp:
         self.listbox.bind("<ButtonRelease-1>", self.stop_drag)
         self.listbox.bind("<Delete>", self.delete_selected_item)
         self.listbox.bind("<Button-3>", self.show_context_menu)
+        
+        self.canvas = tk.Canvas(self.root, width=canvas_width, height=canvas_height, bg='white')
+        self.canvas.grid(row=0, column=1, padx=10, pady=10)
 
-        # Input frame for Add item
-        self.input_frame = tk.Frame(self.root)
-        self.input_frame.grid(row=1, column=0, pady=10)
+        self.canvas.bind("<Button-1>", self.canvas_click)
+        self.canvas.bind("<Button-3>", self.show_canvas_context_menu)
 
-        self.value1_entry = tk.Entry(self.input_frame, width=10)
-        self.value1_entry.grid(row=0, column=0, padx=5)
-        self.value2_entry = tk.Entry(self.input_frame, width=10)
-        self.value2_entry.grid(row=0, column=1, padx=5)
-
-        self.add_button = tk.Button(self.input_frame, text="Add item", command=self.add_item, 
-                                    borderwidth=0, highlightthickness=0, relief="flat", 
-                                    activebackground=BUTTON_PRESS_COLOR, background=BUTTON_BG_COLOR)
-        self.add_button.grid(row=0, column=2, padx=5)
-
-        # Error message label
-        self.error_label = tk.Label(self.root, text="", fg="red", bg="black", width=50, height=2, anchor="w")
-        self.error_label.grid(row=4, column=0, pady=(10, 0), sticky="ew")
-
+        self.point_radius = DEFAULT_POINT_RADIUS
+        self.items = []
+        self.selected_index = None
         self.dragged_index = None
 
-        # Context menu
+        # Error label at bottom
+        self.error_label = tk.Label(self.root, text="", fg="red", bg="black", width=50, height=2, anchor="w")
+        self.error_label.grid(row=1, column=0, columnspan=2, padx=10, pady=10, sticky="w")  # Place error label in row 1
+
         self.context_menu = tk.Menu(self.root, tearoff=0)
-        self.context_menu.add_command(label="Clear", command=self.clear_items)
-        self.context_menu.add_command(label="Load CSV", command=self.load_from_csv)
-        self.context_menu.add_command(label="Save as CSV", command=self.save_to_csv)
-        self.context_menu.add_separator()  # Add a separator before the delete command
+        self.context_menu.add_command(label="Add Point", command=self.show_add_point_dialog, activebackground="blue")
+        self.context_menu.add_separator()
+        self.context_menu.add_command(label="Save as CSV", command=self.save_to_csv, activebackground="blue")
+        self.context_menu.add_command(label="Load CSV", command=self.load_from_csv, activebackground="blue")
+        self.context_menu.add_separator()
+        self.context_menu.add_command(label="Clear", command=self.clear_items, activebackground="red")
+        self.context_menu.add_command(label="Delete", command=self.delete_selected_item, activebackground="red")
 
-        # To keep track of which item was right-clicked
-        self.right_clicked_item_index = None
+        self.canvas_context_menu = tk.Menu(self.root, tearoff=0)
+        self.canvas_context_menu.add_command(label="Set Point Radius", command=self.set_point_radius)
+        self.canvas_context_menu.add_command(label="Delete", command=self.delete_selected_item, activebackground="red")
 
-    def add_item(self):
-        try:
-            value1 = int(self.value1_entry.get())
-            value2 = int(self.value2_entry.get())
-        except ValueError:
-            self.display_error("2 integer values were not provided")
-            self.value1_entry.delete(0, tk.END)
-            self.value2_entry.delete(0, tk.END)
+    # The rest of the methods remain unchanged
+
+
+
+        self.canvas.bind("<Button-1>", self.canvas_click)
+        self.canvas.bind("<Button-3>", self.show_canvas_context_menu)
+
+        self.point_radius = DEFAULT_POINT_RADIUS
+        
+        self.items = []
+        self.selected_index = None
+        self.dragged_index = None
+
+
+    def add_item(self, event=None):
+        if event:
+            value1, value2 = event.x, event.y
+        else:
+            try:
+                value1 = int(self.value1_entry.get())
+                value2 = int(self.value2_entry.get())
+            except ValueError:
+                self.display_error("2 integer values were not provided")
+                self.value1_entry.delete(0, tk.END)
+                self.value2_entry.delete(0, tk.END)
+                return
 
         item = (value1, value2)
-        
         self.items.append(item)
         self.listbox.insert(tk.END, f"{value1}, {value2}")
-        
-        # Adjust Listbox height to accommodate new items
-        self.update_listbox_size()
+        self.redraw_canvas()
 
-        self.value1_entry.delete(0, tk.END)
-        self.value2_entry.delete(0, tk.END)
+        if not event:
+            self.value1_entry.delete(0, tk.END)
+            self.value2_entry.delete(0, tk.END)
 
         self.clear_error()
 
     def delete_selected_item(self, event=None):
         selected_index = self.listbox.curselection()
         if not selected_index:
-            self.display_error("no item is selected")
+            self.display_error("no point is selected for deletion")
             return
         index = selected_index[0]
+
         self.items.pop(index)
         self.listbox.delete(index)
 
-        # Adjust Listbox height after deletion
-        self.update_listbox_size()
+        if self.selected_index == index:
+            self.selected_index = None 
+        elif self.selected_index > index:
+            self.selected_index -= 1
 
+        self.redraw_canvas()
         self.clear_error()
 
     def start_drag(self, event):
@@ -102,6 +136,7 @@ class ReorderListApp:
             if new_index != self.dragged_index:
                 self.items.insert(new_index, self.items.pop(self.dragged_index))
                 self.update_listbox()
+                self.redraw_canvas()
                 self.dragged_index = new_index
 
     def stop_drag(self, event=None):
@@ -110,23 +145,16 @@ class ReorderListApp:
     def clear_items(self, event=None):
         self.items.clear()
         self.listbox.delete(0, tk.END)
-
-        # Adjust Listbox height after clearing all items
-        self.update_listbox_size()
-
+        self.redraw_canvas()
         self.clear_error()
 
     def highlight_selection(self, event=None):
-        self.listbox.configure(selectbackground="gray", selectforeground="white")
-
         selected_index = self.listbox.curselection()
         index = selected_index[0] if selected_index else None
-
+        self.selected_index = index
         for i in range(self.listbox.size()):
-            if i == index:
-                self.listbox.itemconfig(i, {'bg': 'lightblue'})
-            else:
-                self.listbox.itemconfig(i, {'bg': 'white'})
+            self.listbox.itemconfig(i, {'bg': 'lightblue' if i == index else 'white'})
+        self.redraw_canvas()
 
     def update_listbox(self):
         self.listbox.delete(0, tk.END)
@@ -134,91 +162,85 @@ class ReorderListApp:
             self.listbox.insert(tk.END, f"{item[0]}, {item[1]}")
         self.highlight_selection()
 
+    def redraw_canvas(self):
+        self.canvas.delete("all")
+        for index, item in enumerate(self.items):
+            color = "red" if index == self.selected_index else "black"
+            self.canvas.create_oval(item[0] - self.point_radius, item[1] - self.point_radius, 
+                                    item[0] + self.point_radius, item[1] + self.point_radius, fill=color, outline=color)
+
+    def canvas_click(self, event):
+        for index, (x, y) in enumerate(self.items):
+            if (x - event.x) ** 2 + (y - event.y) ** 2 <= self.point_radius ** 2:
+                self.selected_index = index
+                self.listbox.select_clear(0, tk.END)
+                self.listbox.select_set(index)
+                self.highlight_selection()
+                return
+
+        self.add_item(event)
+
     def save_to_csv(self):
         if len(self.items) == 0:
-            self.display_error("list is empty")
+            self.display_error("empty paths cannot be saved")
             return
-
         file_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("CSV Files", "*.csv")])
-
         if file_path:
             try:
                 with open(file_path, mode='w', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerow(["x", "y"])
                     writer.writerows(self.items)
-
                 self.clear_error()
             except Exception as e:
                 self.display_error(f"error saving file: {e}")
 
     def load_from_csv(self):
+        if len(self.items) != 0:
+            self.display_error("the current path needs to be empty to load")
+            return
         file_path = filedialog.askopenfilename(filetypes=[("CSV Files", "*.csv")])
-
         if file_path:
             self.clear_items()
-
             try:
                 with open(file_path, mode='r') as file:
                     reader = csv.reader(file)
-                    next(reader)  # Skip header row
+                    next(reader)
                     for row in reader:
                         if len(row) == 2:
-                            self.items.append((row[0], row[1]))
-                            self.listbox.insert(tk.END, f"{row[0]}, {row[1]}")
-                self.update_listbox()
+                            x, y = int(row[0]), int(row[1])
+                            self.items.append((x, y))
+                            self.listbox.insert(tk.END, f"{x}, {y}")
+                self.redraw_canvas()
                 self.clear_error()
             except Exception as e:
                 self.display_error(f"error loading file: {e}")
-            self.update_listbox_size()
-
 
     def show_context_menu(self, event):
-        """Display context menu on right-click."""
-        # Get the index of the item clicked
-        index = self.listbox.nearest(event.y)
-
-        # If no item is selected, auto-select the closest one
-        if not self.listbox.curselection():
-            self.listbox.selection_clear(0, tk.END)
-            self.listbox.selection_set(index)
-            self.highlight_selection()
-
-        if index is not None:
-            # Set the index of the item right-clicked for future reference
-            self.right_clicked_item_index = index
-            # Clear the context menu and add the delete option
-            self.context_menu.delete(0, tk.END)
-            self.context_menu.add_command(label="delete selected", activebackground=DELETE_PRESS_COLOR, command=self.delete_right_clicked_item)
-            self.context_menu.add_separator()  # Add a separator before the other commands
-            self.context_menu.add_command(label="clear all", command=self.clear_items)
-            self.context_menu.add_command(label="load from csv", command=self.load_from_csv)
-            self.context_menu.add_command(label="save as csv", command=self.save_to_csv)
-        
         self.context_menu.post(event.x_root, event.y_root)
 
-    def delete_right_clicked_item(self):
-        """Delete the item that was right-clicked."""
-        if self.right_clicked_item_index is not None:
-            self.items.pop(self.right_clicked_item_index)
-            self.listbox.delete(self.right_clicked_item_index)
-            self.right_clicked_item_index = None
-
-            # Adjust Listbox height after deletion
-            self.update_listbox_size()
-
-            self.clear_error()
-
-    def update_listbox_size(self):
-        """Dynamically adjust the Listbox height to fit the list items."""
-        # Set the height to match the number of items, with a minimum height of 1
-        self.listbox.config(height=max(len(self.items), MIN_LISTBOX_HEIGHT))
-
-    def display_error(self, message):
-        self.error_label.config(text=message)
+    def display_error(self, error_message):
+        self.error_label.config(text= " " + error_message)
 
     def clear_error(self):
         self.error_label.config(text="")
+
+    def show_add_point_dialog(self):
+        value1 = simpledialog.askinteger("Input X Value", "Enter X Value:")
+        value2 = simpledialog.askinteger("Input Y Value", "Enter Y Value:")
+        if value1 is not None and value2 is not None:
+            self.items.append((value1, value2))
+            self.listbox.insert(tk.END, f"{value1}, {value2}")
+            self.redraw_canvas()
+
+    def show_canvas_context_menu(self, event):
+        self.canvas_context_menu.post(event.x_root, event.y_root)
+
+    def set_point_radius(self):
+        radius = simpledialog.askinteger("Set Point Radius", "Enter the new radius:", initialvalue=self.point_radius)
+        if radius is not None and radius > 0:
+            self.point_radius = radius
+            self.redraw_canvas()
 
 if __name__ == "__main__":
     root = tk.Tk()
