@@ -28,5 +28,5 @@ try
 catch exception
     if strcmp(exception.identifier, 'MATLAB:interrupt')
     disp('Keyboard interrupt detected. Exiting loop, zeroing motors');
-
+    send_drive(roomba_port,0.0,0.0)
 end

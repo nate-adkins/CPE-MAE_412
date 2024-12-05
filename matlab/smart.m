@@ -9,17 +9,21 @@ clear all
 close all
 
 
-PGAIN_DIST = 1;
-IGAIN_DIST = 0;
+PGAIN_DIST = 3;
+IGAIN_DIST = 0.00;
 DGAIN_DIST = 0;
 
-PGAIN_HEAD = 1;
+PGAIN_HEAD = 3;
 IGAIN_HEAD = 0;
 DGAIN_HEAD = 0;
 
-HEADING_THRESHOLD_DEGREES = 5;
-DISTANCE_THRESHOLD_METERS = 1;
+HEADING_THRESHOLD_DEGREES = 3;
+DISTANCE_THRESHOLD_METERS = 0.05;
 REACHED_HEADING = false;
+REACHED_DISTANCE = false;
+goal_index = 1;
+
+prev_distance_errors = [100,100,100];
 
 heading_error_integral = 0.0;
 distance_error_integral = 0.0;
@@ -28,8 +32,8 @@ prev_heading_error = 0.0;
 prev_distance_error = 0.0;
 
 % Definitions
-Ts_Desired=0.1;           % Desired sampling time
-Ts=0.1;                   % sampling time is 0.1 second. It can be reduced 
+Ts_Desired=0.05;           % Desired sampling time
+Ts=0.05;                   % sampling time is 0.1 second. It can be reduced 
                           % slightly to offset other overhead in the loop
 Tend= 30;                  % Was 60 seconds;
 Total_Steps=Tend/Ts_Desired;    % The total number of time steps;
@@ -96,9 +100,9 @@ SD= struct( 'Index',zeros(1,Total_Steps),...            % SD stands for SMART Da
             'CreateCurrent', zeros(1,Total_Steps));     % Current of the Create Robot (rad)
    
 % Initialize the Serial Port for the Data Logger
-S_Logger=Init_Logger('0');  % May be different on different computer
+S_Logger=Init_Logger('1');  % May be different on different computer
 % Initialize the Serial Port for iRobot Create
-S_Create=RoombaInit('1');    
+S_Create=RoombaInit('2');    
 % Initialize the Serial Port for LightWare Laser Rangefinder
 %_LightWare=Init_LightWare('3');     
 
@@ -205,13 +209,13 @@ for i=1:Total_Steps
     end
     
     
-    if mod(i,2)==0
-        lidar_data = receive(lidar,2);
-        display(lidar_data.Ranges(1))
+    % if mod(i,2)==0
+    %     lidar_data = receive(lidar,2);
+        % display(lidar_data.Ranges(1))
     % Comment out the plot functions to have better performance.        
-         plot(lidar_data)
-         drawnow
-    end
+        %  plot(lidar_data)
+        %  drawnow
+    % end
     %% Put your custom control functions here
     %----------------------------------------------------------
     % Use the following function for the robot wheel control:
@@ -255,12 +259,21 @@ for i=1:Total_Steps
 %     % Update covariance
 %     P = (eye(3) - K * H) * cov_prediction;
 
-    goal_x = 0.5;
-    goal_y = 0.5;
+    goal_points = [ 1,0; 
+                    % 0.5, 1;
+                ];
+
+    % if (REACHED_DISTANCE && REACHED_HEADING)
+    %     goal_index = goal_index + 1;
+    %     REACHED_DISTANCE = false;
+    %     REACHED_HEADING = false;
+    % end
+
+    goal_x = goal_points(goal_index,1);
+    goal_y = goal_points(goal_index,2);
     x_error = goal_x - SD.X(i);
     y_error = goal_y - SD.Y(i);
 
-    % Inputs to controllers 
     heading_error = atan2(y_error, x_error) - SD.Yaw(i);
     distance_error = sqrt((x_error^2)+(y_error)^2);
 
@@ -274,22 +287,28 @@ for i=1:Total_Steps
     heading_control_output = PGAIN_HEAD * heading_error + IGAIN_HEAD * heading_error_integral + DGAIN_HEAD * heading_derivative;
     distance_control_output = PGAIN_DIST * distance_error + IGAIN_DIST * distance_error_integral + DGAIN_DIST * distance_derivative;
 
-
     if REACHED_HEADING
         % Drive straight
-        if distance_error > DISTANCE_THRESHOLD_METERS
-            left_speed = distance_control_output; 
-            right_speed = distance_control_output;
+
+        if (distance_error > DISTANCE_THRESHOLD_METERS) && (distance_error < prev_distance_errors(1)) 
+            left_speed = distance_control_output * 0.3; 
+            right_speed = distance_control_output * 0.3;
         else
             left_speed = 0; 
             right_speed = 0;
         end
 
     else
-        if heading_error > deg2rad(HEADING_THRESHOLD_DEGREES)
-            % Turn robot
-            left_speed = -1 * heading_control_output * 0.2;
-            right_speed = heading_control_output * 0.2;
+        if abs(heading_error) > deg2rad(HEADING_THRESHOLD_DEGREES)
+
+            % if heading_error < deg2rad(180)
+            left_speed = -1 * heading_control_output * 0.05;
+            right_speed = 1 * heading_control_output * 0.05;
+            % else
+            %     left_speed = -1 * heading_control_output * 0.05;
+            %     right_speed = heading_control_output * 0.05;     
+            % end 
+
         else
             REACHED_HEADING = true;
             left_speed = 0;
@@ -297,6 +316,7 @@ for i=1:Total_Steps
         end
     end
 
+    fprintf("CUSTOM PRINT")
     disp(left_speed)
     disp(right_speed)
 
@@ -305,7 +325,12 @@ for i=1:Total_Steps
 
     prev_heading_error = heading_error;
     prev_distance_error = distance_error;
+    prev_distance_errors = [prev_distance_errors distance_error];
+    if length(prev_distance_errors) >= 3
+        prev_distance_errors = prev_distance_errors(2:end);
+    end
 
+    
     % SetDriveWheelsSMART(S_Create, Create_Full_Speed-P_cont, Create_Full_Speed+P_cont, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
 
     % x= -0.5;
