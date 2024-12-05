@@ -31,3 +31,15 @@ successful.
 - [x] 4:3 aspect ratio for canvas (match most fonts)
 - [x] Autoscroll the list when it overflows
 - [ ] Click and drag canvas points to reorder
+
+## Plan:
+- load points in path as string
+  - need to handle making paths between letters
+<br>
+- now have a total list of point
+<br>
+- load in a new current goal point from total list
+  - while not reached the current goal point 
+    - take in sensor data, create state estimate
+    - run control loop, apply controls
+    - check if reached goal (threshold)

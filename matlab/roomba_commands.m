@@ -1,20 +1,34 @@
 FORMAT = "unit8";
 
+
 function send_start_mode(serial_port)
     % Starts the SCI. The Start command must be sent before any other SCI commands
-    opcode = 128;
+    opcode = [128];
     write(serial_port, opcode, FORMAT);
 end
 
-function send_full_mode(serial_port)
+
+function send_control_mode(serial_port)
     % Enables unrestricted control of Roomba through the serial interfa and turns off the safety features
-    opcode = 132;
+    opcode = [132];
     write(serial_port, opcode, FORMAT);
 end
 
 
-function send_drive(serPort, linear_vel, angular_vel)
+function [distance, angle] = read_data(serial_port)
+    opcode = 142;
+    write(serial_port, [opcode 0])
+    pause(0.1)
+    response_data = read(serial_port, 26, FORMAT)
+    distance = double(typecast(uint16(SerialData(13)*256 + SerialData(14)), 'int16')) / 1000; % Meters
+    angle = double(typecast(uint16(SerialData(15)*256 + SerialData(16)), 'int16')) * pi / 180; % Radians
+
+end
+
+
+function send_drive(serial_port, linear_vel, angular_vel)
     % Controls Roomba’s drive wheels using linear and angular velocity
+    opcode = 137
     STRAIGHT_RADIUS = 32768; max_radius = 2000; max_vel = 500;
     radius = round(linear_vel / angular_vel);
     if angular_vel == 0
@@ -30,8 +44,9 @@ function send_drive(serPort, linear_vel, angular_vel)
     vel_l = bitand(velocity, 255);
     rad_h = bitshift(radius, -8);
     rad_l = bitand(radius, 255);
-    write(serPort, [137, vel_h, vel_l, rad_h, rad_l], FORMAT);
+    write(serial_port, [opcode, vel_h, vel_l, rad_h, rad_l], FORMAT);
 end
+
 
 function play_country_roads(serPort)
     % Plays the song country roads
@@ -56,9 +71,5 @@ function play_country_roads(serPort)
         notes_values(i) = note_mappings(notes_string(i));
     end
 
-    
-
-    
 end
 
-play_country_roads()
