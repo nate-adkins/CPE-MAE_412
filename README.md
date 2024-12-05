@@ -35,9 +35,11 @@ successful.
 ## Plan:
 - load points in path as string
   - need to handle making paths between letters
-<br>
+
+
 - now have a total list of point
-<br>
+
+
 - load in a new current goal point from total list
   - while not reached the current goal point 
     - take in sensor data, create state estimate
