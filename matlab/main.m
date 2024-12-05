@@ -14,19 +14,14 @@ curr_yaw = 0;
 
 try
     while true
-        % <iterate through goal points>
-            % <update current goal point>
 
-        [distance_delta, angle_delta] = read_data(roomba_port)
+        send_drive(roomba_port,0.5,0.0)
 
-        total_distance = total_distance + distance_delta
-        total_angle = total_angle + angle_delta
+        % [distance_delta, angle_delta] = read_data(roomba_port)
 
-        % read data 
-        % get state esitmate 
+        % total_distance = total_distance + distance_delta
+        % total_angle = total_angle + angle_delta
 
-        % run PID controller for goal point
-        % check if reasonably close 
 
 
     end 
