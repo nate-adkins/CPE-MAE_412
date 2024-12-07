@@ -8,22 +8,11 @@
 clear all
 close all
 
-
-PGAIN_DIST = 3;
-IGAIN_DIST = 0.00;
-DGAIN_DIST = 0;
-
-PGAIN_HEAD = 3;
-IGAIN_HEAD = 0;
-DGAIN_HEAD = 0;
-
 HEADING_THRESHOLD_DEGREES = 3;
 DISTANCE_THRESHOLD_METERS = 0.05;
 REACHED_HEADING = false;
 REACHED_DISTANCE = false;
 goal_index = 1;
-
-prev_distance_errors = [100,100,100];
 
 heading_error_integral = 0.0;
 distance_error_integral = 0.0;
@@ -35,15 +24,15 @@ prev_distance_error = 0.0;
 Ts_Desired=0.05;           % Desired sampling time
 Ts=0.05;                   % sampling time is 0.1 second. It can be reduced 
                           % slightly to offset other overhead in the loop
-Tend= 30;                  % Was 60 seconds;
+Tend= 300;                  % Was 60 seconds;
 Total_Steps=Tend/Ts_Desired;    % The total number of time steps;
 Create_Full_Speed=0.5;      % The highest speed the robot can travel. (Max is 0.5m/s)
 
 % Initialize LIDAR using ROS
-rosshutdown % shutdown any previous node
-rosinit % initialize a ros node
+% rosshutdown % shutdown any previous node
+% rosinit % initialize a ros node
 
-lidar = rossubscriber('/scan');
+% lidar = rossubscriber('/scan');
 
 % Magnetometer Calibration Data
 Mag_A=[  2.3750     0.2485      -0.2296
@@ -55,11 +44,7 @@ Mag_c=[ 0.0067;     0.2667;     0.0473];        % estimated center of the hard i
 P_Bias=0;
 Q_Bias=0;
 R_Bias=0;
-% P_Bias=-0.0019;
-% Q_Bias= 0.0053;
-% R_Bias=-0.0149;
 
-% Define the main Data Structure
 SD= struct( 'Index',zeros(1,Total_Steps),...            % SD stands for SMART Data, which stores all the robot data
             'Time', zeros(1,Total_Steps),...            % The actual time at each time step (s) 
             'Time_Diff', zeros(1,Total_Steps),...       % The time difference between two step (s) 
@@ -99,23 +84,8 @@ SD= struct( 'Index',zeros(1,Total_Steps),...            % SD stands for SMART Da
             'CreateVolts', zeros(1,Total_Steps),...     % Voltage of the Create Robot (rad)
             'CreateCurrent', zeros(1,Total_Steps));     % Current of the Create Robot (rad)
    
-% Initialize the Serial Port for the Data Logger
-S_Logger=Init_Logger('1');  % May be different on different computer
-% Initialize the Serial Port for iRobot Create
-S_Create=RoombaInit('2');    
-% Initialize the Serial Port for LightWare Laser Rangefinder
-%_LightWare=Init_LightWare('3');     
-
-% Initialize the Serial Port for Hukuyo Lidar
-% S_Hokuyo=Init_Hokuyo(7);    % initalize the Lidar
-% pause(0.1);
-% fscanf(S_Hokuyo)
-% rangescan=zeros(1, 682);  
-
-% for i=1:Total_Steps
-%     SD.Lidar_Angle(:,i)=(-120:240/682:120-240/682)*pi/180;   % an Array of all the scan angles
-% end
-% fprintf(S_Hokuyo,'GD0044072500');           % request a scan
+S_Logger=Init_Logger('0');
+S_Create=RoombaInit('1');    
 
 flushinput(S_Logger);       % Flush the data logger serial port
 flushinput(S_Create);       % Flush the iRobot Create serial port
@@ -131,12 +101,10 @@ P= eye(3);
 Q= diag ([.04,.04,.01]);
 R= diag ([.25,.25, .04]);
 
-% Starting the main loop
 for i=1:Total_Steps
     tic
     SD.Index(i)=i;
     
-    % Acquire data from the sensor interface board
     if i==1
         [SD.Logger_Counter(i), SD.Ax(i), SD.Ay(i), SD.Az(i), Raw_P, Raw_Q, Raw_R, Raw_Mx, Raw_My, Raw_Mz, SD.IMU_T(i), A2D_Ch1, A2D_Ch2, SD.RF_F(i), SD.RF_FL(i), SD.RF_L(i), SD.RF_B(i), SD.RF_R(i), SD.RF_FR(i)] = Read_Logger_2(S_Logger,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); 
     else
@@ -148,40 +116,19 @@ for i=1:Total_Steps
     
     flushinput(S_Logger);       % Flush the data logger serial port
 
- %FLIP THE SMART_BOARD For the New Robot
+    SD.Ax(i)=SD.Ax(i);
+    SD.Ay(i)=-SD.Ay(i);
+    SD.Az(i)=-SD.Az(i);
+    SD.P(i)=SD.P(i);
+    SD.Q(i)=-SD.Q(i);
+    SD.R(i)=-SD.R(i);
+    SD.Mx(i)=SD.Mx(i);
+    SD.My(i)=-SD.My(i);
+    SD.Mz(i)=-SD.Mz(i);
 
-    SD.Ax(i)=SD.Ax(i)
-    SD.Ay(i)=-SD.Ay(i)
-    SD.Az(i)=-SD.Az(i)
-    SD.P(i)=SD.P(i)
-    SD.Q(i)=-SD.Q(i)
-    SD.R(i)=-SD.R(i)
-    SD.Mx(i)=SD.Mx(i)
-    SD.My(i)=-SD.My(i)
-    SD.Mz(i)=-SD.Mz(i)
-    
-%     % Acquire data from the LightWare Laser Rangefinder
-%     if i==1
-%         SD.Laser_RF(i) = Read_LightWare(S_LightWare,0);
-%     else
-%         SD.Laser_RF(i) = Read_LightWare(S_LightWare,SD.Laser_RF(i-1));
-%     end
-%     flushinput(S_LightWare);    % Flush the LightWare Laser Rangefinder serial port
-
-    % Acquire the data from the iRobot Create
     [BumpRight,BumpLeft,BumpFront,SD.Wall(i),SD.VirtWall(i),CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,LeftCurrOver,RightCurrOver,DirtL,DirtR,ButtonPlay,ButtonAv,SD.Dist(i),SD.Angle(i),SD.CreateVolts(i),SD.CreateCurrent(i),Temp,Charge,Capacity,pCharge]=Read_Create_2(S_Create);
     flushinput(S_Create);       % Flush the iRobot Create serial port
     fwrite(S_Create, [142 0]);  % Request all sensor data from Create
-
-    % Acquire data from Hukuyo Lidar
-%     rangescan = Read_Hokuyo(S_Hokuyo, rangescan);
-%     SD.Lidar_Range(:,i)=rangescan;
-%     SD.Laser_RF(i) = rangescan(341);    % simulated laser rangefinder using the LIDAR center spot
-%     plot(rangescan);
-%     drawnow
-
-%     flushinput(S_Hokuyo);       % Flush the Lidar serial port
-%     fprintf(S_Hokuyo,'GD0044072500');           % request a new Lidar scan
 
     Time=clock;                     % Mark the current time;
     SD.Time(i)=Time(6);             % Store the seconds;
@@ -259,20 +206,36 @@ for i=1:Total_Steps
 %     % Update covariance
 %     P = (eye(3) - K * H) * cov_prediction;
 
-    goal_points = [ 1,0; 
-                    % 0.5, 1;
-                ];
+    % goal_points = [ 0.25, 0.25;
+    %                 0.0, 0.0;
+    %                 0.25, 0.25;
+    %                 0.0, 0.0;
+    %             ];
 
-    % if (REACHED_DISTANCE && REACHED_HEADING)
-    %     goal_index = goal_index + 1;
-    %     REACHED_DISTANCE = false;
-    %     REACHED_HEADING = false;
-    % end
+    goal_points = [ 0.25,0;
+                    0,0;
+                    0.25,0;
+                    0,0;
+                ];
 
     goal_x = goal_points(goal_index,1);
     goal_y = goal_points(goal_index,2);
     x_error = goal_x - SD.X(i);
     y_error = goal_y - SD.Y(i);
+
+    if  i < 10 && i > 2 && SD.Yaw(i) == 0.0
+        disp("Did not recieve yaw data")
+        SetDriveWheelsSMART(S_Create, 0.0, 0.0, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
+        exit;
+    end
+
+    PGAIN_DIST = 3;
+    IGAIN_DIST = 0.00;
+    DGAIN_DIST = 0;
+
+    PGAIN_HEAD = 3;
+    IGAIN_HEAD = 0;
+    DGAIN_HEAD = 0;
 
     heading_error = atan2(y_error, x_error) - SD.Yaw(i);
     distance_error = sqrt((x_error^2)+(y_error)^2);
@@ -287,89 +250,75 @@ for i=1:Total_Steps
     heading_control_output = PGAIN_HEAD * heading_error + IGAIN_HEAD * heading_error_integral + DGAIN_HEAD * heading_derivative;
     distance_control_output = PGAIN_DIST * distance_error + IGAIN_DIST * distance_error_integral + DGAIN_DIST * distance_derivative;
 
-    if REACHED_HEADING
+    fprintf("Goal index")
+    disp(goal_index)
+    fprintf("Heading error")
+    disp(rad2deg(heading_error))
+    fprintf("Distance error")
+    disp(distance_error)
+    fprintf("Current goal point")
+    disp(goal_x)
+    disp(goal_y)
+
+    if REACHED_HEADING && REACHED_DISTANCE
+
+        REACHED_HEADING = false;
+        REACHED_DISTANCE = false;
+        goal_index = goal_index + 1;
+        left_speed = 0.0;
+        right_speed = 0.0;
+
+        if goal_index > length(goal_points)
+            disp("End of goal points")
+            exit;
+        end
+
+    elseif REACHED_HEADING
         % Drive straight
 
-        if (distance_error > DISTANCE_THRESHOLD_METERS) && (distance_error < prev_distance_errors(1)) 
+        if (distance_error > DISTANCE_THRESHOLD_METERS) && (distance_error <= prev_distance_error) 
+            disp("    Driving - Moving")
             left_speed = distance_control_output * 0.3; 
             right_speed = distance_control_output * 0.3;
         else
+            disp("    Driving - Stop")
+            REACHED_DISTANCE = true;
             left_speed = 0; 
             right_speed = 0;
         end
 
     else
         if abs(heading_error) > deg2rad(HEADING_THRESHOLD_DEGREES)
-
-            % if heading_error < deg2rad(180)
+            if heading_error < deg2rad(180)
+            disp("    Turning - Left")
             left_speed = -1 * heading_control_output * 0.05;
-            right_speed = 1 * heading_control_output * 0.05;
-            % else
-            %     left_speed = -1 * heading_control_output * 0.05;
-            %     right_speed = heading_control_output * 0.05;     
-            % end 
+            right_speed = heading_control_output * 0.05;
+            else
+                disp("    Turning - Right")
+                left_speed = heading_control_output * 0.05;
+                right_speed = -1 * heading_control_output * 0.05;     
+            end 
 
         else
+            disp("    Turning - Stop")
             REACHED_HEADING = true;
             left_speed = 0;
             right_speed = 0;
         end
     end
 
-    fprintf("CUSTOM PRINT")
-    disp(left_speed)
-    disp(right_speed)
-
     SetDriveWheelsSMART(S_Create, left_speed, right_speed, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
 
 
     prev_heading_error = heading_error;
     prev_distance_error = distance_error;
-    prev_distance_errors = [prev_distance_errors distance_error];
-    if length(prev_distance_errors) >= 3
-        prev_distance_errors = prev_distance_errors(2:end);
-    end
 
-    
-    % SetDriveWheelsSMART(S_Create, Create_Full_Speed-P_cont, Create_Full_Speed+P_cont, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
-
-    % x= -0.5;
-    % y= -0.5;
-    % X_E = x - SD.X(i);
-    % y_E = y - SD.Y(i);
-
-    % theta_goal = atan2(y_E,X_E);
-    % disp(theta_goal)
-    % theta_error = theta_goal - SD.Yaw(i);
-    % disp(theta_error)
-    % P_cont = Proportional_Gain *.2 * theta_error;
-
-    % SetDriveWheelsSMART(S_Create, Create_Full_Speed-P_cont, Create_Full_Speed+P_cont, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
-
-    
-    % Collision Avoidance Example(Set Tend=60s)
-%     if SD.RF_F(i)<500
-%         SetDriveWheelsSMART(S_Create, -Create_Full_Speed*.4, -Create_Full_Speed*.6, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
-%     elseif SD.RF_B(i)<300
-%         SetDriveWheelsSMART(S_Create, Create_Full_Speed*.6, Create_Full_Speed*.4, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
-%     elseif SD.RF_L(i)<500
-%         SetDriveWheelsSMART(S_Create, -Create_Full_Speed*.5, Create_Full_Speed*0.5, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
-%     elseif SD.RF_R(i)<500
-%         SetDriveWheelsSMART(S_Create, Create_Full_Speed*0.5, -Create_Full_Speed*.5, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
-%     else
-%         SetDriveWheelsSMART(S_Create, Create_Full_Speed, Create_Full_Speed, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
-%     end
-
-    %----------------------------------------------------------
-    %% End of the Custom Control Code
-
-    % Calculate the tinputime left in the constant interval
     SD.Delay(i)=Ts-toc;         
     if SD.Delay(i)>0
         pause(SD.Delay(i));     % Kill the remaining time
     end
 end
-Total_Elapse_Time=SD.Time(Total_Steps)-SD.Time(1)  % Calcualte the total elapse time, not counting the minutes
+Total_Elapse_Time=SD.Time(Total_Steps)-SD.Time(1);  % Calcualte the total elapse time, not counting the minutes
 SetDriveWheelsSMART(S_Create, 0, 0, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);       % Stop the wheels
 BeepRoomba(S_Create);       % Make a Beeping Sound
 
@@ -378,10 +327,6 @@ delete(S_Logger)
 clear S_Logger  
 delete(S_Create)
 clear S_Create  
-%delete(S_LightWare)
-%clear S_LightWare  
-% fprintf(S_Hokuyo,'QT');
-% fclose(S_Hokuyo);
 
 save('SMART_DATA.mat', 'SD');       % Save all the collected data to a .mat file
 % SMART_PLOT;                         % Plot all the robot data
