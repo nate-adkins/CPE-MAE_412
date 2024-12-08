@@ -20,9 +20,12 @@ distance_error_integral = 0.0;
 prev_heading_error = 0.0;
 prev_distance_error = 0.0;
 
+%Letter Input function
+Word_matrix = Input_to_Letter();
+
 % Definitions
-Ts_Desired=0.05;           % Desired sampling time
-Ts=0.05;                   % sampling time is 0.1 second. It can be reduced 
+Ts_Desired=0.1;           % Desired sampling time
+Ts=0.1;                   % sampling time is 0.1 second. It can be reduced 
                           % slightly to offset other overhead in the loop
 Tend= 300;                  % Was 60 seconds;
 Total_Steps=Tend/Ts_Desired;    % The total number of time steps;
@@ -31,6 +34,7 @@ Create_Full_Speed=0.5;      % The highest speed the robot can travel. (Max is 0.
 % Initialize LIDAR using ROS
 % rosshutdown % shutdown any previous node
 % rosinit % initialize a ros node
+
 
 % lidar = rossubscriber('/scan');
 
@@ -84,8 +88,8 @@ SD= struct( 'Index',zeros(1,Total_Steps),...            % SD stands for SMART Da
             'CreateVolts', zeros(1,Total_Steps),...     % Voltage of the Create Robot (rad)
             'CreateCurrent', zeros(1,Total_Steps));     % Current of the Create Robot (rad)
    
-S_Logger=Init_Logger('0');
-S_Create=RoombaInit('1');    
+S_Logger=Init_Logger('1');
+S_Create=RoombaInit('2');    
 
 flushinput(S_Logger);       % Flush the data logger serial port
 flushinput(S_Create);       % Flush the iRobot Create serial port
@@ -93,7 +97,6 @@ fwrite(S_Create, [142 0]);  % Request all sensor data from Create
 BeepRoomba(S_Create);       % Make a Beeping Sound
 pause(0.1);
 
-Proportional_Gain = 1.0;
    
 state_est = [0; 0; 0];
 P= eye(3);
@@ -154,57 +157,45 @@ for i=1:Total_Steps
         SD.X(i)=SD.X(i-1)+SD.Dist(i)*cos(SD.Yaw(i));                          % Dead Reckoning for X position
         SD.Y(i)=SD.Y(i-1)+SD.Dist(i)*sin(SD.Yaw(i));                          % Dead Reckoning for Y position
     end
+
+    u = [SD.Dist(i)/Ts;SD.Angle(i)/Ts];
+    dt = Ts;
+
+    %state predicton
+    theta = state_est(3);
+    state_pred = state_est+ [
+        u(1) * cos(theta)*dt;
+        u(1)* sin(theta)*dt; 
+        u(2) * dt
+        ];
+
+    % Jacobian for F
+    F = [
+      1, 0, -u(1) * sin(theta) * dt;
+      0, 1,  u(1) * cos(theta) * dt;
+      0, 0,  1
+    ];
     
+    %cov_prediction
+    cov_prediction = F * P * F' + Q;
+
+    % Measurement step
+    z = [SD.X(i); SD.Y(i); SD.Yaw(i)];  % Measurements (e.g., dead reckoning, lidar)
     
-    % if mod(i,2)==0
-    %     lidar_data = receive(lidar,2);
-        % display(lidar_data.Ranges(1))
-    % Comment out the plot functions to have better performance.        
-        %  plot(lidar_data)
-        %  drawnow
-    % end
-    %% Put your custom control functions here
-    %----------------------------------------------------------
-    % Use the following function for the robot wheel control:
-    % SetDriveWheelsSMART(S_Create, rightWheelVel, leftWheelVel, SD.CliffLeft(i),SD.CliffRight(i),SD.CliffFrontLeft(i),SD.CliffFrontRight(i));
-%     u = [SD.Dist(i)/Ts;SD.Angle(i)/Ts];
-%     dt = Ts;
-% 
-%     %state predictopm
-%     theta = state_est(3);
-%     state_pred = state_est+ [
-%         u(1) * cos(theta)*dt;
-%         u(1)* sin(theta)*dt; 
-%         u(2) * dt
-%         ];
-% 
-%     % Jacobian for F
-%     F = [
-%       1, 0, -u(1) * sin(theta) * dt;
-%       0, 1,  u(1) * cos(theta) * dt;
-%       0, 0,  1
-%     ];
-%     
-%     %cov_prediction
-%     cov_prediction = F * P * F' + Q*dt^2;
-% 
-%     % Measurement step
-%     z = [SD.X(i); SD.Y(i); SD.Yaw(i)];  % Measurements (e.g., dead reckoning, lidar)
-%     
-%     % Predicted measurement
-%     z_pred = state_pred;  % Assuming direct measurements of state variables
-%     
-%     % Jacobian of h (measurement model)
-%     H = eye(3);
-%     
-%     % Kalman gain
-%     K = cov_prediction * H' / (H * cov_prediction * H' + R);
-%     
-%     % Update state estimate
-%     state_est = state_pred + K * (z - z_pred);
-%     
-%     % Update covariance
-%     P = (eye(3) - K * H) * cov_prediction;
+    % Predicted measurement
+    z_pred = state_pred;  % Assuming direct measurements of state variables
+    
+    % Jacobian of h (measurement model)
+    H = eye(3);
+    
+    % Kalman gain
+    K = cov_prediction * H' / (H * cov_prediction * H' + R);
+    
+    % Update state estimate
+    state_est = state_pred + K * (z - z_pred);
+    
+    % Update covariance
+    P = (eye(3) - K * H) * cov_prediction;
 
     % goal_points = [ 0.25, 0.25;
     %                 0.0, 0.0;
@@ -212,16 +203,14 @@ for i=1:Total_Steps
     %                 0.0, 0.0;
     %             ];
 
-    goal_points = [ 0.25,0;
-                    0,0;
-                    0.25,0;
-                    0,0;
-                ];
+    goal_points = Word_matrix;
+    goal_x = goal_points(goal_index,1)/500;
+    goal_y = goal_points(goal_index,2)/500;
 
-    goal_x = goal_points(goal_index,1);
-    goal_y = goal_points(goal_index,2);
-    x_error = goal_x - SD.X(i);
-    y_error = goal_y - SD.Y(i);
+    % x_error = goal_x - SD.X(i);
+    % y_error = goal_y - SD.Y(i);
+    x_error = goal_x - state_est(1);
+    y_error = goal_y - state_est(2);
 
     if  i < 10 && i > 2 && SD.Yaw(i) == 0.0
         disp("Did not recieve yaw data")
@@ -230,14 +219,15 @@ for i=1:Total_Steps
     end
 
     PGAIN_DIST = 3;
-    IGAIN_DIST = 0.00;
+    IGAIN_DIST = 0.15;
     DGAIN_DIST = 0;
 
     PGAIN_HEAD = 3;
-    IGAIN_HEAD = 0;
+    IGAIN_HEAD = .15;
     DGAIN_HEAD = 0;
 
-    heading_error = atan2(y_error, x_error) - SD.Yaw(i);
+    % heading_error = atan2(y_error, x_error) - SD.Yaw(i);
+    heading_error = atan2(y_error, x_error) - state_est(3);
     distance_error = sqrt((x_error^2)+(y_error)^2);
 
     heading_error_integral = heading_error_integral + heading_error; 
