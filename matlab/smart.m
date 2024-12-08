@@ -8,8 +8,9 @@
 clear all
 close all
 
-HEADING_THRESHOLD_DEGREES = 3;
-DISTANCE_THRESHOLD_METERS = 0.05;
+diary(['logs/output_log_' datestr(datetime('now'), 'yyyy_mm_dd_HH_MM_SS') '.txt']);
+
+SCALING_FACTOR = 500;
 REACHED_HEADING = false;
 REACHED_DISTANCE = false;
 goal_index = 1;
@@ -17,12 +18,15 @@ goal_index = 1;
 heading_error_integral = 0.0;
 distance_error_integral = 0.0;
 
-prev_heading_error = 0.0;
-prev_distance_error = 0.0;
+prev_heading_error = 1000;
+prev_distance_error = 1000;
+
+%Letter Input function
+Word_matrix = Input_to_Letter();
 
 % Definitions
-Ts_Desired=0.05;           % Desired sampling time
-Ts=0.05;                   % sampling time is 0.1 second. It can be reduced 
+Ts_Desired=0.1;           % Desired sampling time
+Ts=0.1;                   % sampling time is 0.1 second. It can be reduced 
                           % slightly to offset other overhead in the loop
 Tend= 300;                  % Was 60 seconds;
 Total_Steps=Tend/Ts_Desired;    % The total number of time steps;
@@ -31,6 +35,7 @@ Create_Full_Speed=0.5;      % The highest speed the robot can travel. (Max is 0.
 % Initialize LIDAR using ROS
 % rosshutdown % shutdown any previous node
 % rosinit % initialize a ros node
+
 
 % lidar = rossubscriber('/scan');
 
@@ -84,8 +89,8 @@ SD= struct( 'Index',zeros(1,Total_Steps),...            % SD stands for SMART Da
             'CreateVolts', zeros(1,Total_Steps),...     % Voltage of the Create Robot (rad)
             'CreateCurrent', zeros(1,Total_Steps));     % Current of the Create Robot (rad)
    
-S_Logger=Init_Logger('0');
-S_Create=RoombaInit('1');    
+S_Logger=Init_Logger('1');
+S_Create=RoombaInit('2');    
 
 flushinput(S_Logger);       % Flush the data logger serial port
 flushinput(S_Create);       % Flush the iRobot Create serial port
@@ -93,7 +98,6 @@ fwrite(S_Create, [142 0]);  % Request all sensor data from Create
 BeepRoomba(S_Create);       % Make a Beeping Sound
 pause(0.1);
 
-Proportional_Gain = 1.0;
    
 state_est = [0; 0; 0];
 P= eye(3);
@@ -154,149 +158,165 @@ for i=1:Total_Steps
         SD.X(i)=SD.X(i-1)+SD.Dist(i)*cos(SD.Yaw(i));                          % Dead Reckoning for X position
         SD.Y(i)=SD.Y(i-1)+SD.Dist(i)*sin(SD.Yaw(i));                          % Dead Reckoning for Y position
     end
+
+    u = [SD.Dist(i)/Ts;SD.Angle(i)/Ts];
+    dt = Ts;
+
+    %state predicton
+    theta = state_est(3);
+    state_pred = state_est+ [
+        u(1) * cos(theta)*dt;
+        u(1)* sin(theta)*dt; 
+        u(2) * dt
+        ];
+
+    % Jacobian for F
+    F = [
+      1, 0, -u(1) * sin(theta) * dt;
+      0, 1,  u(1) * cos(theta) * dt;
+      0, 0,  1
+    ];
     
+    %cov_prediction
+    cov_prediction = F * P * F' + Q;
+
+    % Measurement step
+    z = [SD.X(i); SD.Y(i); SD.Yaw(i)];  % Measurements (e.g., dead reckoning, lidar)
     
-    % if mod(i,2)==0
-    %     lidar_data = receive(lidar,2);
-        % display(lidar_data.Ranges(1))
-    % Comment out the plot functions to have better performance.        
-        %  plot(lidar_data)
-        %  drawnow
+    % Predicted measurement
+    z_pred = state_pred;  % Assuming direct measurements of state variables
+    
+    % Jacobian of h (measurement model)
+    H = eye(3);
+    
+    % Kalman gain
+    K = cov_prediction * H' / (H * cov_prediction * H' + R);
+    
+    % Update state estimate
+    state_est = state_pred + K * (z - z_pred);
+    
+    % Update covariance
+    P = (eye(3) - K * H) * cov_prediction;
+
+    goal_points = Word_matrix;
+
+    % goal_points = [ 0.25, 0.2;
+    %                 0.0, 0.0;
+    %             ] * SCALING_FACTOR;
+
+    goal_x = goal_points(goal_index,2)/SCALING_FACTOR;
+    goal_y = goal_points(goal_index,1)/SCALING_FACTOR;
+
+    % x_error = goal_x - SD.X(i);
+    % y_error = goal_y - SD.Y(i);
+    x_error = goal_x - state_est(1);
+    y_error = goal_y - state_est(2);
+
+    % if  i < 10 && i > 5 && SD.Yaw(i) == 0.0
+    %     disp("Did not recieve yaw data")
+    %     SetDriveWheelsSMART(S_Create, 0.0, 0.0, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
+    %     pause(3)
+    %     exit;
     % end
-    %% Put your custom control functions here
-    %----------------------------------------------------------
-    % Use the following function for the robot wheel control:
-    % SetDriveWheelsSMART(S_Create, rightWheelVel, leftWheelVel, SD.CliffLeft(i),SD.CliffRight(i),SD.CliffFrontLeft(i),SD.CliffFrontRight(i));
-%     u = [SD.Dist(i)/Ts;SD.Angle(i)/Ts];
-%     dt = Ts;
-% 
-%     %state predictopm
-%     theta = state_est(3);
-%     state_pred = state_est+ [
-%         u(1) * cos(theta)*dt;
-%         u(1)* sin(theta)*dt; 
-%         u(2) * dt
-%         ];
-% 
-%     % Jacobian for F
-%     F = [
-%       1, 0, -u(1) * sin(theta) * dt;
-%       0, 1,  u(1) * cos(theta) * dt;
-%       0, 0,  1
-%     ];
-%     
-%     %cov_prediction
-%     cov_prediction = F * P * F' + Q*dt^2;
-% 
-%     % Measurement step
-%     z = [SD.X(i); SD.Y(i); SD.Yaw(i)];  % Measurements (e.g., dead reckoning, lidar)
-%     
-%     % Predicted measurement
-%     z_pred = state_pred;  % Assuming direct measurements of state variables
-%     
-%     % Jacobian of h (measurement model)
-%     H = eye(3);
-%     
-%     % Kalman gain
-%     K = cov_prediction * H' / (H * cov_prediction * H' + R);
-%     
-%     % Update state estimate
-%     state_est = state_pred + K * (z - z_pred);
-%     
-%     % Update covariance
-%     P = (eye(3) - K * H) * cov_prediction;
 
-    % goal_points = [ 0.25, 0.25;
-    %                 0.0, 0.0;
-    %                 0.25, 0.25;
-    %                 0.0, 0.0;
-    %             ];
-
-    goal_points = [ 0.25,0;
-                    0,0;
-                    0.25,0;
-                    0,0;
-                ];
-
-    goal_x = goal_points(goal_index,1);
-    goal_y = goal_points(goal_index,2);
-    x_error = goal_x - SD.X(i);
-    y_error = goal_y - SD.Y(i);
-
-    if  i < 10 && i > 2 && SD.Yaw(i) == 0.0
-        disp("Did not recieve yaw data")
-        SetDriveWheelsSMART(S_Create, 0.0, 0.0, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
-        exit;
-    end
+    TURNING_LEFT = false;
+    HEADING_THRESHOLD_DEGREES = 3;
+    DISTANCE_THRESHOLD_METERS = 0.07;
 
     PGAIN_DIST = 3;
-    IGAIN_DIST = 0.00;
+    IGAIN_DIST = 0.15;
     DGAIN_DIST = 0;
 
-    PGAIN_HEAD = 3;
-    IGAIN_HEAD = 0;
-    DGAIN_HEAD = 0;
+    PGAIN_HEAD = 2.0;
+    IGAIN_HEAD = 0.01;
+    DGAIN_HEAD = 0.0;
 
-    heading_error = atan2(y_error, x_error) - SD.Yaw(i);
+    % heading_error = atan2(y_error, x_error) - SD.Yaw(i);
+    heading_error = atan2(y_error, x_error) - state_est(3);
+    heading_error = mod(heading_error,2*pi);
+
+    if heading_error > deg2rad(180)
+        heading_error = (2*pi) - heading_error;
+        TURNING_LEFT = true;
+    end
+
     distance_error = sqrt((x_error^2)+(y_error)^2);
+    
+    heading_error_integral = heading_error_integral + heading_error;
 
-    heading_error_integral = heading_error_integral + heading_error; 
-    distance_error_integral = distance_error_integral + distance_error;
+    if REACHED_HEADING
+        distance_error_integral = distance_error_integral + distance_error;
+    end
 
     heading_derivative = (prev_heading_error - heading_error)/Ts_Desired;
     distance_derivative = (prev_distance_error - distance_error)/Ts_Desired;
 
     % PID Controller Output
-    heading_control_output = PGAIN_HEAD * heading_error + IGAIN_HEAD * heading_error_integral + DGAIN_HEAD * heading_derivative;
-    distance_control_output = PGAIN_DIST * distance_error + IGAIN_DIST * distance_error_integral + DGAIN_DIST * distance_derivative;
+    heading_control_output = PGAIN_HEAD * heading_error + IGAIN_HEAD * heading_error_integral - DGAIN_HEAD * heading_derivative;
+    distance_control_output = PGAIN_DIST * distance_error + IGAIN_DIST * distance_error_integral - DGAIN_DIST * distance_derivative;
 
-    fprintf("Goal index")
-    disp(goal_index)
-    fprintf("Heading error")
-    disp(rad2deg(heading_error))
-    fprintf("Distance error")
-    disp(distance_error)
-    fprintf("Current goal point")
-    disp(goal_x)
-    disp(goal_y)
+    fprintf("\nGoal index %1.0f\n",goal_index)
+    fprintf("Heading error %1.4f\n",rad2deg(heading_error))
+    fprintf("Distance error %1.4f\n",distance_error)
+    fprintf("Current goal point x:%1.4f y:%1.4f\n",goal_x, goal_y)
+    fprintf("Current sums: head:%1.4f dist:%1.4f\n",heading_error_integral, distance_error_integral)
 
     if REACHED_HEADING && REACHED_DISTANCE
-
+        disp("    New goal")
         REACHED_HEADING = false;
         REACHED_DISTANCE = false;
         goal_index = goal_index + 1;
         left_speed = 0.0;
         right_speed = 0.0;
+        heading_error_integral = 0.0;
+        distance_error_integral = 0.0;
 
         if goal_index > length(goal_points)
             disp("End of goal points")
-            exit;
+            pause(5)
+            diary off;
+            return
         end
 
     elseif REACHED_HEADING
-        % Drive straight
+        if (distance_error > prev_distance_error + (DISTANCE_THRESHOLD_METERS/2)) 
+            disp("    Driving - Stop due to overshoot")
+            REACHED_DISTANCE = true;
+            left_speed = 0; 
+            right_speed = 0;
 
-        if (distance_error > DISTANCE_THRESHOLD_METERS) && (distance_error <= prev_distance_error) 
+        elseif (distance_error > DISTANCE_THRESHOLD_METERS)
             disp("    Driving - Moving")
             left_speed = distance_control_output * 0.3; 
             right_speed = distance_control_output * 0.3;
-        else
+
+        elseif (distance_error <= DISTANCE_THRESHOLD_METERS)
             disp("    Driving - Stop")
             REACHED_DISTANCE = true;
             left_speed = 0; 
             right_speed = 0;
+
         end
+        prev_distance_error = distance_error;
+        disp("Real update to previous distance error")
 
     else
         if abs(heading_error) > deg2rad(HEADING_THRESHOLD_DEGREES)
-            if heading_error < deg2rad(180)
-            disp("    Turning - Left")
-            left_speed = -1 * heading_control_output * 0.05;
-            right_speed = heading_control_output * 0.05;
+            
+            % MIN_SPEED = 0.10;
+
+            speed = heading_control_output * 0.05;
+            % speed = max(speed,MIN_SPEED)
+            
+            if TURNING_LEFT
+                disp("    Turning - Left")
+                left_speed = -1 * speed;
+                right_speed = speed;
+                TURNING_LEFT = false;
             else
                 disp("    Turning - Right")
-                left_speed = heading_control_output * 0.05;
-                right_speed = -1 * heading_control_output * 0.05;     
+                left_speed = speed;
+                right_speed = -1 * speed;     
             end 
 
         else
@@ -304,14 +324,19 @@ for i=1:Total_Steps
             REACHED_HEADING = true;
             left_speed = 0;
             right_speed = 0;
+            prev_distance_error = 1000;
+            disp("Previous distance error set to 1000")
         end
+
     end
 
-    SetDriveWheelsSMART(S_Create, left_speed, right_speed, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
+    fprintf("speeds: left:%1.2fright:%1.2f\n",left_speed,right_speed)
+
+
+    SetDriveWheelsSMART(S_Create, right_speed, left_speed, CliffLeft,CliffRight,CliffFrontLeft,CliffFrontRight,BumpRight,BumpLeft,BumpFront);
 
 
     prev_heading_error = heading_error;
-    prev_distance_error = distance_error;
 
     SD.Delay(i)=Ts-toc;         
     if SD.Delay(i)>0
@@ -327,6 +352,6 @@ delete(S_Logger)
 clear S_Logger  
 delete(S_Create)
 clear S_Create  
-
-save('SMART_DATA.mat', 'SD');       % Save all the collected data to a .mat file
+diary off;
+% save('SMART_DATA.mat', 'SD');       % Save all the collected data to a .mat file
 % SMART_PLOT;                         % Plot all the robot data

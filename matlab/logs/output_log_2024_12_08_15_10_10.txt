@@ -1,0 +1,2528 @@
+input a String H
+Successfully read file: /home/smart1/CPE-MAE_412/path_creator/csv paths/H.csv
+     0     6
+     0   160
+     0   255
+     0   346
+     0   430
+     0   508
+     1   597
+     0   539
+     0   467
+     0   375
+     0   300
+    86   300
+   196   300
+   308   300
+   383   300
+   448   300
+   448   367
+   448   464
+   449   598
+   448   517
+   448   398
+   448   250
+   448   192
+   449    97
+   448     1
+
+WARNING:  port in use.  Closing.
+Data Logger Initialized
+That com port is in use.   Closing it.
+Establishing connection to Roomba...
+Opening connection to Roomba...
+Setting Roomba to Control Mode...
+I am alive if my two outboard lights came on
+
+confirmation =
+
+  1×0 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> row vector
+
+
+Goal index 1
+Heading error 124.8230
+Distance error 2.6435
+Current goal point x:0.0120 y:0.0000
+Current sums: head:2.1786 dist:0.0000
+    Turning - Right
+
+Goal index 1
+Heading error 42.0573
+Distance error 1.3677
+Current goal point x:0.0120 y:0.0000
+Current sums: head:2.9126 dist:0.0000
+    Turning - Right
+
+Goal index 1
+Heading error 143.8640
+Distance error 0.8318
+Current goal point x:0.0120 y:0.0000
+Current sums: head:5.4235 dist:0.0000
+    Turning - Right
+
+Goal index 1
+Heading error 199.4087
+Distance error 0.5352
+Current goal point x:0.0120 y:0.0000
+Current sums: head:8.9038 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 233.0328
+Distance error 0.3531
+Current goal point x:0.0120 y:0.0000
+Current sums: head:12.9710 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 250.1269
+Distance error 0.2356
+Current goal point x:0.0120 y:0.0000
+Current sums: head:17.3366 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 259.5554
+Distance error 0.1580
+Current goal point x:0.0120 y:0.0000
+Current sums: head:21.8667 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 262.3661
+Distance error 0.1065
+Current goal point x:0.0120 y:0.0000
+Current sums: head:26.4458 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 266.2220
+Distance error 0.0723
+Current goal point x:0.0120 y:0.0000
+Current sums: head:31.0923 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 269.4117
+Distance error 0.0497
+Current goal point x:0.0120 y:0.0000
+Current sums: head:35.7944 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 274.8002
+Distance error 0.0350
+Current goal point x:0.0120 y:0.0000
+Current sums: head:40.5906 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 285.6693
+Distance error 0.0262
+Current goal point x:0.0120 y:0.0000
+Current sums: head:45.5764 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 294.0038
+Distance error 0.0208
+Current goal point x:0.0120 y:0.0000
+Current sums: head:50.7078 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 305.0783
+Distance error 0.0179
+Current goal point x:0.0120 y:0.0000
+Current sums: head:56.0324 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 314.4606
+Distance error 0.0172
+Current goal point x:0.0120 y:0.0000
+Current sums: head:61.5208 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 321.2099
+Distance error 0.0166
+Current goal point x:0.0120 y:0.0000
+Current sums: head:67.1269 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.7424
+Distance error 0.0172
+Current goal point x:0.0120 y:0.0000
+Current sums: head:72.7948 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5242
+Distance error 0.0171
+Current goal point x:0.0120 y:0.0000
+Current sums: head:78.4762 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.5199
+Distance error 0.0171
+Current goal point x:0.0120 y:0.0000
+Current sums: head:84.1925 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4736
+Distance error 0.0171
+Current goal point x:0.0120 y:0.0000
+Current sums: head:89.8906 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.7757
+Distance error 0.0170
+Current goal point x:0.0120 y:0.0000
+Current sums: head:95.6113 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8103
+Distance error 0.0170
+Current goal point x:0.0120 y:0.0000
+Current sums: head:101.3152 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2670
+Distance error 0.0170
+Current goal point x:0.0120 y:0.0000
+Current sums: head:107.0097 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.9839
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:112.7341 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.3032
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:118.4291 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.9735
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:124.1185 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.0306
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:129.8262 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.8625
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:135.5136 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.1585
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:141.1887 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5625
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:146.8883 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5917
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:152.5709 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0011
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:158.2432 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4707
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:163.9412 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5382
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:169.6230 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9700
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:175.2947 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4527
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:180.9924 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5279
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:186.6740 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9641
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:192.3456 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6205
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:198.0113 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.4111
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:203.6734 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.1123
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:209.3651 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.3206
+Distance error 0.0180
+Current goal point x:0.0120 y:0.0000
+Current sums: head:215.0430 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.4427
+Distance error 0.0190
+Current goal point x:0.0120 y:0.0000
+Current sums: head:220.7580 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.0191
+Distance error 0.0190
+Current goal point x:0.0120 y:0.0000
+Current sums: head:226.4481 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.9186
+Distance error 0.0200
+Current goal point x:0.0120 y:0.0000
+Current sums: head:232.1364 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.9116
+Distance error 0.0200
+Current goal point x:0.0120 y:0.0000
+Current sums: head:237.8421 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4037
+Distance error 0.0210
+Current goal point x:0.0120 y:0.0000
+Current sums: head:243.5390 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.2104
+Distance error 0.0211
+Current goal point x:0.0120 y:0.0000
+Current sums: head:249.2499 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.9437
+Distance error 0.0211
+Current goal point x:0.0120 y:0.0000
+Current sums: head:254.9386 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.8365
+Distance error 0.0220
+Current goal point x:0.0120 y:0.0000
+Current sums: head:260.6256 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8807
+Distance error 0.0221
+Current goal point x:0.0120 y:0.0000
+Current sums: head:266.3307 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.3370
+Distance error 0.0230
+Current goal point x:0.0120 y:0.0000
+Current sums: head:272.0264 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.3438
+Distance error 0.0231
+Current goal point x:0.0120 y:0.0000
+Current sums: head:277.7047 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.8075
+Distance error 0.0231
+Current goal point x:0.0120 y:0.0000
+Current sums: head:283.3736 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.9624
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:289.0802 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7460
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:294.7656 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8936
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:300.4709 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7851
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:306.1569 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.1176
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:311.8313 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.7137
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:317.4986 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2973
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:323.1936 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4340
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:328.8735 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9076
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:334.5442 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4155
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:340.2412 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5057
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:345.9224 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9510
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:351.5938 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4416
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:357.2913 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5215
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:362.9727 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7893
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:368.6763 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7333
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:374.3614 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0896
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:380.0353 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5260
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:385.7343 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5728
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:391.4166 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9917
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:397.0887 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4663
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:402.7867 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5364
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:408.4683 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9695
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:414.1401 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6239
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:419.8059 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2421
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:425.4999 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.3997
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:431.1792 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7150
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:436.8814 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.6880
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:442.5658 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0619
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:448.2392 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5091
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:453.9378 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5625
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:459.6200 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9854
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:465.2920 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4625
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:470.9899 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5340
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:476.6715 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9681
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:482.3433 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4519
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:488.0409 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5276
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:493.7225 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9642
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:499.3942 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4495
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:505.0918 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5261
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:510.7733 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9633
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:516.4450 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4490
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:522.1426 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5258
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:527.8241 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9631
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:533.4957 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4488
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:539.1933 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5257
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:544.8748 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7918
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:550.5784 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7348
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:556.2636 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0905
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:561.9375 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6977
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:567.6045 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2871
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:573.2993 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4271
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:578.9791 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9029
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:584.6497 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4122
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:590.3467 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5034
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:596.0278 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9494
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:601.6992 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4405
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:607.3967 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5207
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:613.0781 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9599
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:618.7497 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6181
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:624.4154 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2385
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:630.1093 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.2264
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:635.8205 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.9997
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:641.5102 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.2520
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:647.1870 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.6250
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:652.8876 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.6331
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:658.5710 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0285
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:664.2438 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6599
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:669.9102 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2640
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:675.6046 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4131
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:681.2841 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.8943
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:686.9546 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4069
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:692.6515 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5002
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:698.3325 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7763
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:704.0358 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7254
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:709.7208 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0847
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:715.3946 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6942
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:721.0616 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2849
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:726.7563 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4258
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:732.4361 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9021
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:738.1067 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4117
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:743.8037 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5031
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:749.4848 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9492
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:755.1562 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4404
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:760.8537 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5206
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:766.5351 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9599
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:772.2067 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4469
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:777.9043 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5246
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:783.5857 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7911
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:789.2893 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7344
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:794.9745 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0902
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:800.6484 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6975
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:806.3154 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2870
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:812.0102 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4271
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:817.6899 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9029
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:823.3606 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4121
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:829.0575 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5034
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:834.7386 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7782
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:840.4420 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7265
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:846.1270 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0854
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:851.8008 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5234
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:857.4997 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 323.7424
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:863.1501 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7047
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:868.8347 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0721
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:874.5083 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5153
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:880.2071 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5663
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:885.8893 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9877
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:891.5614 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4639
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:897.2592 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5349
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:902.9409 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7974
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:908.6446 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7383
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:914.3298 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0926
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:920.0037 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5278
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:925.7027 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5739
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:931.3850 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9924
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:937.0572 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6379
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:942.7232 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2506
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:948.4174 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4049
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:954.0968 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7182
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:959.7991 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.6899
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:965.4834 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0631
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:971.1569 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5098
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:976.8555 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5629
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:982.5377 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9857
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:988.2097 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4626
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:993.9076 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5341
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:999.5892 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9681
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1005.2610 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4519
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1010.9587 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5276
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1016.6402 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9642
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1022.3119 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4495
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1028.0095 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5262
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1033.6910 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9633
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1039.3627 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6201
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1045.0284 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2398
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1050.7223 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.3983
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1056.4016 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7142
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1062.1038 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.6875
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1067.7882 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0616
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1073.4615 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6801
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1079.1283 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2763
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1084.8229 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4206
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1090.5025 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.8989
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1096.1731 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4097
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1101.8700 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.3307
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1107.5830 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.0634
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1113.2739 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.2908
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1118.9513 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.8198
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1124.6205 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.3615
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1130.3166 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4725
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1135.9971 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7594
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1141.7001 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7151
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1147.3849 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0784
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1153.0586 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6903
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1158.7255 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2826
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1164.4203 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4244
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1170.1000 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9012
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1175.7706 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.5823
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1181.4356 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2167
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1187.1292 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.3842
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1192.8082 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7056
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1198.5103 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.6823
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1204.1945 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8873
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1209.8998 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7930
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1215.5859 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.1259
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1221.2604 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.7193
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1226.9279 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.3002
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1232.6229 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4352
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1238.3028 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7366
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1244.0054 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 323.8723
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1249.6581 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7839
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1255.3441 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.1204
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1261.0185 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5448
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1266.7178 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5842
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1272.4003 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9987
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1278.0726 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6417
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1283.7386 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2529
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1289.4328 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.2351
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1295.1442 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.0051
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1300.8340 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.2552
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1306.5108 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.7981
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1312.1796 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.3483
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1317.8754 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4644
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1323.5559 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7545
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1329.2588 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7121
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1334.9436 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0766
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1340.6172 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6892
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1346.2841 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2819
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1351.9788 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4240
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1357.6585 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9010
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1363.3291 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4110
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1369.0261 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5027
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1374.7072 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7778
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1380.4105 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7263
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1386.0955 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0853
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1391.7693 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5233
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1397.4682 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 323.7423
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1403.1186 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7047
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1408.8032 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0721
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1414.4768 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5153
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1420.1756 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5663
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1425.8578 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8165
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1431.5618 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 323.9211
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1437.2153 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.8136
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1442.9018 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.9673
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1448.6084 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.8418
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1454.2955 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.1557
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1459.9705 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.7374
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1465.6382 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.3113
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1471.3334 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4419
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1477.0135 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7407
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1482.7162 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7037
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1488.4008 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0715
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1494.0743 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5149
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1499.7731 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5660
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1505.4553 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9876
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1511.1274 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4638
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1516.8253 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 323.7060
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1522.4750 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.6825
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1528.1592 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8874
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1533.8645 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7931
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1539.5507 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.1260
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1545.2252 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5482
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1550.9245 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5863
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1556.6071 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9999
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1562.2794 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6425
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1567.9455 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2534
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1573.6397 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4066
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1579.3191 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.8904
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1584.9895 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4045
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1590.6863 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4987
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1596.3674 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7754
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1602.0707 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7248
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1607.7556 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0844
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1613.4294 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5228
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1619.1283 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5708
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1624.8106 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9905
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1630.4828 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4656
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1636.1807 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5359
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1641.8623 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9692
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1647.5341 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4526
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1653.2318 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5280
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1658.9133 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9644
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1664.5850 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4497
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1670.2826 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5262
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1675.9642 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9633
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1681.6358 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4490
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1687.3334 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5258
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1693.0149 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9631
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1698.6866 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4488
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1704.3842 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5257
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1710.0657 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7919
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1715.7693 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7348
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1721.4545 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0905
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1727.1284 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6977
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1732.7954 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2871
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1738.4902 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.4271
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1744.1700 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9029
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1749.8406 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4122
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1755.5376 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5034
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1761.2187 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9494
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1766.8901 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4405
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1772.5876 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5207
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1778.2690 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9599
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1783.9406 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4469
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1789.6382 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5246
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1795.3196 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9623
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1800.9913 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.6195
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1806.6570 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2394
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1812.3509 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.3981
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1818.0302 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7140
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1823.7324 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.6874
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1829.4167 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0616
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1835.0901 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5089
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1840.7888 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5623
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1846.4709 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.9853
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1852.1430 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.4624
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1857.8408 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5340
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1863.5225 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7969
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1869.2262 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7379
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1874.9114 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.0924
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1880.5853 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.5277
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1886.2843 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 323.7450
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1891.9347 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7063
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1897.6193 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.9019
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1903.3249 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.8019
+Distance error 0.0240
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1909.0112 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.6950
+Distance error 0.0250
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1914.6956 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8107
+Distance error 0.0250
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1920.3995 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.2343
+Distance error 0.0260
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1926.0934 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.2940
+Distance error 0.0260
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1931.7709 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 324.7818
+Distance error 0.0260
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1937.4394 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8795
+Distance error 0.0270
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1943.1445 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7054
+Distance error 0.0270
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1948.8291 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 327.3907
+Distance error 0.0280
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1954.5432 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.0136
+Distance error 0.0281
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1960.2332 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7087
+Distance error 0.0290
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1965.9179 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.8207
+Distance error 0.0291
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1971.6220 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.7202
+Distance error 0.0291
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1977.3069 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 325.5402
+Distance error 0.0300
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1982.9886 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.7278
+Distance error 0.0301
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1988.6911 dist:0.0000
+    Turning - Left
+
+Goal index 1
+Heading error 326.1058
+Distance error 0.0310
+Current goal point x:0.0120 y:0.0000
+Current sums: head:1994.3827 dist:0.0000
+    Turning - Left
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smart')" style="font-weight:bold">smart</a>
+} 
+smart

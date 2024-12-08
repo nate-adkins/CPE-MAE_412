@@ -1,0 +1,17 @@
+input a String z\
+Successfully read file: /home/smart1/CPE-MAE_412/path_creator/csv paths/Z.csv
+     1   599
+   449   599
+     1     1
+   447     1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Input_to_Letter>readLetterCSV')" style="font-weight:bold">Input_to_Letter>readLetterCSV</a>
+Input must be a letter (A-Z).
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Input_to_Letter', '/home/smart1/CPE-MAE_412/matlab/Input_to_Letter.m', 8)" style="font-weight:bold">Input_to_Letter</a> (<a href="matlab: opentoline('/home/smart1/CPE-MAE_412/matlab/Input_to_Letter.m',8,0)">line 8</a>)
+    letter_Matrix = table2array(readLetterCSV(string(i)));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smart', '/home/smart1/CPE-MAE_412/matlab/smart.m', 25)" style="font-weight:bold">smart</a> (<a href="matlab: opentoline('/home/smart1/CPE-MAE_412/matlab/smart.m',25,0)">line 25</a>)
+Word_matrix = Input_to_Letter();
+} 
+smart

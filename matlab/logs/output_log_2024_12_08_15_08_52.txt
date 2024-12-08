@@ -1,0 +1,101 @@
+input a String d
+Successfully read file: /home/smart1/CPE-MAE_412/path_creator/csv paths/D.csv
+    14   582
+    12   560
+    14   532
+    12   503
+     8   460
+     7   434
+     9   398
+    13   376
+    16   344
+    15   302
+    15   267
+    10   223
+    14   206
+    12   169
+    13   149
+     9   113
+    11    89
+     8    60
+     5    30
+    10    19
+    22    23
+    23    45
+    22    74
+    22    96
+    27   129
+    23   169
+    24   212
+    28   251
+    33   297
+    34   332
+    34   379
+    33   417
+    32   451
+    27   496
+    26   546
+    28   571
+    31   586
+    43   587
+    69   584
+    90   582
+   114   580
+   140   577
+   174   573
+   200   560
+   236   547
+   269   519
+   308   490
+   339   461
+   377   422
+   402   389
+   427   331
+   431   304
+   422   254
+   416   214
+   398   178
+   359   139
+   329   114
+   282    95
+   236    70
+   176    51
+   130    42
+    68    38
+    35    29
+
+WARNING:  port in use.  Closing.
+Data Logger Initialized
+That com port is in use.   Closing it.
+Establishing connection to Roomba...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.lang.makeUniqueStrings>makeUnique')" style="font-weight:bold">matlab.lang.makeUniqueStrings>makeUnique</a>
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.lang.makeUniqueStrings', '/home/smart1/MATLAB/toolbox/matlab/lang/+matlab/+lang/makeUniqueStrings.m', 131)" style="font-weight:bold">matlab.lang.makeUniqueStrings</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/matlab/lang/+matlab/+lang/makeUniqueStrings.m',131,0)">line 131</a>)
+        makeUnique(inStr, exclStrOrElemToChk, maxStringLength);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.tabular.private.metaDim/checkAgainstVarLabels', '/home/smart1/MATLAB/toolbox/matlab/datatypes/tabular/+matlab/+internal/+tabular/+private/metaDim.m', 86)" style="font-weight:bold">matlab.internal.tabular.private.metaDim/checkAgainstVarLabels</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/matlab/datatypes/tabular/+matlab/+internal/+tabular/+private/metaDim.m',86,0)">line 86</a>)
+            [modifiedLabels,wasConflicted] = matlab.lang.makeUniqueStrings(obj.labels,varLabels,namelengthmax);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('table.init', '/home/smart1/MATLAB/toolbox/matlab/datatypes/tabular/@table/table.m', 457)" style="font-weight:bold">table.init</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/matlab/datatypes/tabular/@table/table.m',457,0)">line 457</a>)
+                t.metaDim = t.metaDim.checkAgainstVarLabels(t.varDim.labels);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('struct2table', '/home/smart1/MATLAB/toolbox/matlab/datatypes/tabular/struct2table.m', 81)" style="font-weight:bold">struct2table</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/matlab/datatypes/tabular/struct2table.m',81,0)">line 81</a>)
+            t = table.init(vars,nrows,rownames,nvars,varnames);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrument.internal.ICTRemoveFunctionalityHelper/showWarning', '/home/smart1/MATLAB/toolbox/shared/instrument/+instrument/+internal/ICTRemoveFunctionalityHelper.m', 131)" style="font-weight:bold">instrument.internal.ICTRemoveFunctionalityHelper/showWarning</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/shared/instrument/+instrument/+internal/ICTRemoveFunctionalityHelper.m',131,0)">line 131</a>)
+            table = struct2table(ST);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrument.internal.ICTRemoveFunctionalityHelper', '/home/smart1/MATLAB/toolbox/shared/instrument/+instrument/+internal/ICTRemoveFunctionalityHelper.m', 48)" style="font-weight:bold">instrument.internal.ICTRemoveFunctionalityHelper</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/shared/instrument/+instrument/+internal/ICTRemoveFunctionalityHelper.m',48,0)">line 48</a>)
+            if obj.Phase == instrument.internal.ICTRemoveFunctionalityPhase.Warn && ~showWarning(obj)
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('serial', '/home/smart1/MATLAB/toolbox/matlab/serial/@serial/serial.m', 150)" style="font-weight:bold">serial</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/matlab/serial/@serial/serial.m',150,0)">line 150</a>)
+            obj = obj@instrument.internal.ICTRemoveFunctionalityHelper("serial");
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('RoombaInit', '/home/smart1/CPE-MAE_412/matlab/RoombaInit.m', 38)" style="font-weight:bold">RoombaInit</a> (<a href="matlab: opentoline('/home/smart1/CPE-MAE_412/matlab/RoombaInit.m',38,0)">line 38</a>)
+serPort = serial(comm,'BaudRate', 57600);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smart', '/home/smart1/CPE-MAE_412/matlab/smart.m', 93)" style="font-weight:bold">smart</a> (<a href="matlab: opentoline('/home/smart1/CPE-MAE_412/matlab/smart.m',93,0)">line 93</a>)
+S_Create=RoombaInit('2');
+} 
+smart

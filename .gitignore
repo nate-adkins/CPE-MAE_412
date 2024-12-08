@@ -1,8 +1,2 @@
-*.csv
-
 path_creator/build/
 path_creator/*.spec
-
-*.log
-*.pyc
-*.pyo

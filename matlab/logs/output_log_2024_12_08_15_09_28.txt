@@ -1,0 +1,23 @@
+input a String z
+Successfully read file: /home/smart1/CPE-MAE_412/path_creator/csv paths/Z.csv
+     1   599
+   449   599
+     1     1
+   447     1
+
+WARNING:  port in use.  Closing.
+Data Logger Initialized
+Establishing connection to Roomba...
+Opening connection to Roomba...
+Setting Roomba to Control Mode...
+I am alive if my two outboard lights came on
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('serial/fread')" style="font-weight:bold">serial/fread</a>
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('RoombaInit', '/home/smart1/CPE-MAE_412/matlab/RoombaInit.m', 68)" style="font-weight:bold">RoombaInit</a> (<a href="matlab: opentoline('/home/smart1/CPE-MAE_412/matlab/RoombaInit.m',68,0)">line 68</a>)
+confirmation = (fread(serPort,4))
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smart', '/home/smart1/CPE-MAE_412/matlab/smart.m', 93)" style="font-weight:bold">smart</a> (<a href="matlab: opentoline('/home/smart1/CPE-MAE_412/matlab/smart.m',93,0)">line 93</a>)
+S_Create=RoombaInit('2');
+} 
+smart
