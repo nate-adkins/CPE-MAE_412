@@ -45,3 +45,13 @@ successful.
     - take in sensor data, create state estimate
     - run control loop, apply controls
     - check if reached goal (threshold)
+
+
+x and y swap fixed
+but the scaling needs fixed
+handle between letters
+tune pid parameters 
+
+nice to have 
+different param values for each letter 
+different values for types of letters
