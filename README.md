@@ -18,7 +18,7 @@ After the robot displayed a word, visitors and other students not on the same te
 to guess the word. If more than 50% of the guesses are correct, the run would be declared as
 successful.
 
-# [Path Creator](path_creator\path_creator.py)
+# [Path Creator](path_creator/path_creator.py)
 
 ![img](./imgs/creator.png)
 
@@ -33,7 +33,7 @@ successful.
 - [x] Autoscroll the list when it overflows
 - [x] Save screenshots
 
-# [smart.m](matlab\smart.m)
+# [smart.m](matlab/smart.m)
 
 ## To Do
 
