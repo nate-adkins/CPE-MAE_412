@@ -18,12 +18,11 @@ After the robot displayed a word, visitors and other students not on the same te
 to guess the word. If more than 50% of the guesses are correct, the run would be declared as
 successful.
 
-# [Path Creator](path_creator/path_creator.py)
+# [path creator](path_creator/path_creator.py)
 
-![img](./imgs/creator.png)
+### Path creator is a tool to draw letters as paths of points that can be saved and fed to our robot
 
 ## To Do
-
 - [x] Save and load csv files
 - [x] Adjust coordinate system so bottom left is origin (match english letter writing)
 - [x] Display x and y position of cursor on canvas in bottom right
@@ -33,7 +32,17 @@ successful.
 - [x] Autoscroll the list when it overflows
 - [x] Save screenshots
 
+### UI
+![img](./imgs/creator.png)
+
+### Our Path Alphabet
+![img](./path_creator/path_imgs/merged/merged.jpg)
+
+
+
 # [smart.m](matlab/smart.m)
+
+### Serial port interfacing, control loops, and the EKF are included in this file 
 
 ## To Do
 
