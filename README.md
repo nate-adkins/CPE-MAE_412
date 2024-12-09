@@ -22,7 +22,7 @@ successful.
 
 ### Path creator is a tool to draw letters as paths of points that can be saved and fed to our robot
 
-## To Do
+### To Do
 - [x] Save and load csv files
 - [x] Adjust coordinate system so bottom left is origin (match english letter writing)
 - [x] Display x and y position of cursor on canvas in bottom right
@@ -44,7 +44,7 @@ successful.
 
 ### Serial port interfacing, control loops, and the EKF are included in this file 
 
-## To Do
+### To Do
 
 - [x] Iterate through paths
 - [x] Load paths from csv files
