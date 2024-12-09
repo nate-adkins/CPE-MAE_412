@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog
 import csv
+from PIL import ImageGrab
 
 RED = "#f44336"
 BLUE = "#509af3"
@@ -141,6 +142,28 @@ class ReorderListApp:
         self.canvas_context_menu.add_command(label="Delete selected point", command=self.delete_selected_item, activebackground=RED)
         self.canvas_context_menu.add_separator()
         self.canvas_context_menu.add_command(label="Clear all points", command=self.clear_items, activebackground=RED)  
+        self.canvas_context_menu.add_command(label="Save canvas as screenshot",
+                                        command=self.save_canvas_as_screenshot,
+                                        activebackground=BLUE, activeforeground=BLACK)
+    
+    
+    def save_canvas_as_screenshot(self):
+        # Get canvas position on the screen
+        x = self.canvas.winfo_rootx()
+        y = self.canvas.winfo_rooty()
+        w = x + self.canvas.winfo_width()
+        h = y + self.canvas.winfo_height()
+
+        # Prompt user to save the screenshot
+        file_path = filedialog.asksaveasfilename(defaultextension=".png",
+                                                filetypes=[("PNG Files", "*.png")])
+        if file_path:
+            try:
+                # Take a screenshot of the canvas area and save it
+                ImageGrab.grab(bbox=(x, y, w, h)).save(file_path)
+                self.display_error(f"Screenshot saved to: {file_path}")
+            except Exception as e:
+                self.display_error(f"Error saving screenshot: {e}")
     
     def show_tooltip(self, event):
         x = self.instructions_label.winfo_rootx() - (self.tooltip.winfo_reqwidth() - self.instructions_label.winfo_width())
