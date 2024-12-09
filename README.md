@@ -18,11 +18,12 @@ After the robot displayed a word, visitors and other students not on the same te
 to guess the word. If more than 50% of the guesses are correct, the run would be declared as
 successful.
 
-## Path Creator
+# [Path Creator](path_creator\path_creator.py)
 
-![img](./imgs/image.png)
+![img](./imgs/creator.png)
 
-### To Do
+## To Do
+
 - [x] Save and load csv files
 - [x] Adjust coordinate system so bottom left is origin (match english letter writing)
 - [x] Display x and y position of cursor on canvas in bottom right
@@ -30,28 +31,14 @@ successful.
 - [x] Lock x and y axis values to currently selected point for placing points
 - [x] 4:3 aspect ratio for canvas (match most fonts)
 - [x] Autoscroll the list when it overflows
-- [ ] Click and drag canvas points to reorder
+- [x] Save screenshots
 
-## Plan:
-- load points in path as string
-  - need to handle making paths between letters
+# [smart.m](matlab\smart.m)
 
+## To Do
 
-- now have a total list of point
-
-
-- load in a new current goal point from total list
-  - while not reached the current goal point 
-    - take in sensor data, create state estimate
-    - run control loop, apply controls
-    - check if reached goal (threshold)
-
-
-x and y swap fixed
-but the scaling needs fixed
-handle between letters
-tune pid parameters 
-
-nice to have 
-different param values for each letter 
-different values for types of letters
+- [x] Iterate through paths
+- [x] Load paths from csv files
+- [x] Heading and distance PID controllers
+- [x] EKF for better data
+- [x] Log files to debugging
