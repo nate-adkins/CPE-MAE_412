@@ -24,7 +24,7 @@ function data = readLetterCSV(letter)
     end
     
     % Construct the filename
-    filename = strcat('/home/smart1/CPE-MAE_412/path_creator/csv paths/',letter, '.csv');
+    filename = strcat('/home/smart1/new_CPE-MAE_412/path_creator/csv paths/',letter, '.csv');
     
     % Check if the file exists
     if isfile(filename)
@@ -36,5 +36,3 @@ function data = readLetterCSV(letter)
         error('File %s does not exist.', filename);
     end
 end
-
-% 

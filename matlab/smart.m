@@ -8,9 +8,9 @@
 clear all
 close all
 
-diary(['logs/output_log_' datestr(datetime('now'), 'yyyy_mm_dd_HH_MM_SS') '.txt']);
+diary(['/home/smart1/new_CPE-MAE_412/matlab/logs/output_log_' datestr(datetime('now'), 'yyyy_mm_dd_HH_MM_SS') '.txt']);
 
-SCALING_FACTOR = 500;
+SCALING_FACTOR = 600;
 REACHED_HEADING = false;
 REACHED_DISTANCE = false;
 goal_index = 1;
@@ -25,8 +25,8 @@ prev_distance_error = 1000;
 Word_matrix = Input_to_Letter();
 
 % Definitions
-Ts_Desired=0.1;           % Desired sampling time
-Ts=0.1;                   % sampling time is 0.1 second. It can be reduced 
+Ts_Desired=0.08;           % Desired sampling time
+Ts = Ts_Desired;          % sampling time is 0.1 second. It can be reduced 
                           % slightly to offset other overhead in the loop
 Tend= 300;                  % Was 60 seconds;
 Total_Steps=Tend/Ts_Desired;    % The total number of time steps;
@@ -89,8 +89,8 @@ SD= struct( 'Index',zeros(1,Total_Steps),...            % SD stands for SMART Da
             'CreateVolts', zeros(1,Total_Steps),...     % Voltage of the Create Robot (rad)
             'CreateCurrent', zeros(1,Total_Steps));     % Current of the Create Robot (rad)
    
-S_Logger=Init_Logger('1');
-S_Create=RoombaInit('2');    
+S_Logger=Init_Logger('0');
+S_Create=RoombaInit('1');    
 
 flushinput(S_Logger);       % Flush the data logger serial port
 flushinput(S_Create);       % Flush the iRobot Create serial port
@@ -178,7 +178,7 @@ for i=1:Total_Steps
     ];
     
     %cov_prediction
-    cov_prediction = F * P * F' + Q;
+    cov_prediction = F * P * F' + Q; % * dt * dt;
 
     % Measurement step
     z = [SD.X(i); SD.Y(i); SD.Yaw(i)];  % Measurements (e.g., dead reckoning, lidar)
@@ -190,7 +190,7 @@ for i=1:Total_Steps
     H = eye(3);
     
     % Kalman gain
-    K = cov_prediction * H' / (H * cov_prediction * H' + R);
+    K = cov_prediction * H' / (H * cov_prediction * H' + R/55);
     
     % Update state estimate
     state_est = state_pred + K * (z - z_pred);
@@ -221,14 +221,14 @@ for i=1:Total_Steps
 
     TURNING_LEFT = false;
     HEADING_THRESHOLD_DEGREES = 3;
-    DISTANCE_THRESHOLD_METERS = 0.07;
+    DISTANCE_THRESHOLD_METERS = 0.03;
 
     PGAIN_DIST = 3;
-    IGAIN_DIST = 0.15;
+    IGAIN_DIST = 0.05;
     DGAIN_DIST = 0;
 
     PGAIN_HEAD = 2.0;
-    IGAIN_HEAD = 0.01;
+    IGAIN_HEAD = 0.05;
     DGAIN_HEAD = 0.0;
 
     % heading_error = atan2(y_error, x_error) - SD.Yaw(i);
@@ -303,10 +303,10 @@ for i=1:Total_Steps
     else
         if abs(heading_error) > deg2rad(HEADING_THRESHOLD_DEGREES)
             
-            % MIN_SPEED = 0.10;
+            MIN_SPEED = 0.09;
 
             speed = heading_control_output * 0.05;
-            % speed = max(speed,MIN_SPEED)
+            speed = max(speed,MIN_SPEED);
             
             if TURNING_LEFT
                 disp("    Turning - Left")

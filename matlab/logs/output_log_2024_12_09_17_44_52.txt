@@ -1,0 +1,7 @@
+input a String {Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Input_to_Letter')" style="font-weight:bold">Input_to_Letter</a>
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smart', '/home/smart1/new_CPE-MAE_412/matlab/smart.m', 25)" style="font-weight:bold">smart</a> (<a href="matlab: opentoline('/home/smart1/new_CPE-MAE_412/matlab/smart.m',25,0)">line 25</a>)
+Word_matrix = Input_to_Letter();
+} 
+smart

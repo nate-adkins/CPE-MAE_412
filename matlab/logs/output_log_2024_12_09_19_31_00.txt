@@ -1,0 +1,4158 @@
+input a String q
+Successfully read file: /home/smart1/new_CPE-MAE_412/path_creator/csv paths/Q.csv
+     0   300
+    70   480
+   225   600
+   380   480
+   450   300
+   380   120
+   450     0
+   380   120
+   225     0
+    70   120
+     0   300
+
+WARNING:  port in use.  Closing.
+Data Logger Initialized
+That com port is in use.   Closing it.
+Establishing connection to Roomba...
+Opening connection to Roomba...
+Setting Roomba to Control Mode...
+I am alive if my two outboard lights came on
+
+confirmation =
+
+  1×0 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> row vector
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 0.5000
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0000 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 1
+Heading error 0.0000
+Distance error 0.5000
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0000 dist:0.5000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.46right:0.46
+
+Goal index 1
+Heading error 0.0000
+Distance error 0.5000
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0000 dist:1.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.46right:0.46
+
+Goal index 1
+Heading error 0.0075
+Distance error 0.5000
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0001 dist:1.5000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.47right:0.47
+
+Goal index 1
+Heading error 0.3379
+Distance error 0.4840
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0060 dist:1.9840
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.47right:0.47
+
+Goal index 1
+Heading error 0.5035
+Distance error 0.4520
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0148 dist:2.4360
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.44right:0.44
+
+Goal index 1
+Heading error 0.2549
+Distance error 0.4300
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0193 dist:2.8660
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.43right:0.43
+
+Goal index 1
+Heading error 0.2657
+Distance error 0.3940
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0239 dist:3.2600
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.40right:0.40
+
+Goal index 1
+Heading error 0.1392
+Distance error 0.3640
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0263 dist:3.6240
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.38right:0.38
+
+Goal index 1
+Heading error 0.1501
+Distance error 0.3340
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0289 dist:3.9580
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.36right:0.36
+
+Goal index 1
+Heading error 0.1394
+Distance error 0.2990
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0314 dist:4.2570
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.33right:0.33
+
+Goal index 1
+Heading error 0.2384
+Distance error 0.2700
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0355 dist:4.5270
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.31right:0.31
+
+Goal index 1
+Heading error 0.3534
+Distance error 0.2360
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0417 dist:4.7630
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.28right:0.28
+
+Goal index 1
+Heading error 0.3476
+Distance error 0.2100
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0478 dist:4.9730
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.26right:0.26
+
+Goal index 1
+Heading error 0.1999
+Distance error 0.1870
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0513 dist:5.1600
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.25right:0.25
+
+Goal index 1
+Heading error 0.1359
+Distance error 0.1620
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0536 dist:5.3220
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.23right:0.23
+
+Goal index 1
+Heading error 0.1220
+Distance error 0.1460
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0558 dist:5.4680
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 1
+Heading error 0.0550
+Distance error 0.1250
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0567 dist:5.5930
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 1
+Heading error 0.2484
+Distance error 0.1060
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0611 dist:5.6990
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 1
+Heading error 0.2523
+Distance error 0.0940
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0655 dist:5.7930
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 1
+Heading error 0.2382
+Distance error 0.0770
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0696 dist:5.8700
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 1
+Heading error 0.2990
+Distance error 0.0650
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0748 dist:5.9351
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 1
+Heading error 0.3601
+Distance error 0.0530
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0811 dist:5.9881
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 1
+Heading error 0.5954
+Distance error 0.0400
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.0915 dist:6.0281
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 1
+Heading error 1.1237
+Distance error 0.0290
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.1111 dist:6.0571
+    Driving - Stop
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 1
+Heading error 1.5225
+Distance error 0.0180
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.1377 dist:6.0751
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 2
+Heading error 20.6179
+Distance error 0.3351
+Current goal point x:0.8000 y:0.1167
+Current sums: head:0.3598 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 20.8074
+Distance error 0.3351
+Current goal point x:0.8000 y:0.1167
+Current sums: head:0.7230 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 19.4468
+Distance error 0.3351
+Current goal point x:0.8000 y:0.1167
+Current sums: head:1.0624 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 17.7231
+Distance error 0.3361
+Current goal point x:0.8000 y:0.1167
+Current sums: head:1.3717 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 15.3497
+Distance error 0.3361
+Current goal point x:0.8000 y:0.1167
+Current sums: head:1.6396 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 12.9843
+Distance error 0.3361
+Current goal point x:0.8000 y:0.1167
+Current sums: head:1.8663 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 10.1298
+Distance error 0.3361
+Current goal point x:0.8000 y:0.1167
+Current sums: head:2.0431 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 7.0074
+Distance error 0.3361
+Current goal point x:0.8000 y:0.1167
+Current sums: head:2.1654 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 3.5899
+Distance error 0.3371
+Current goal point x:0.8000 y:0.1167
+Current sums: head:2.2280 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 2
+Heading error 0.6040
+Distance error 0.3371
+Current goal point x:0.8000 y:0.1167
+Current sums: head:2.2386 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 2
+Heading error 2.5234
+Distance error 0.3371
+Current goal point x:0.8000 y:0.1167
+Current sums: head:2.2826 dist:0.3371
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.31right:0.31
+
+Goal index 2
+Heading error 2.6816
+Distance error 0.3371
+Current goal point x:0.8000 y:0.1167
+Current sums: head:2.3294 dist:0.6742
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.31right:0.31
+
+Goal index 2
+Heading error 2.4865
+Distance error 0.3311
+Current goal point x:0.8000 y:0.1167
+Current sums: head:2.3728 dist:1.0053
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.31right:0.31
+
+Goal index 2
+Heading error 9.1968
+Distance error 0.3114
+Current goal point x:0.8000 y:0.1167
+Current sums: head:2.5333 dist:1.3167
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.30right:0.30
+
+Goal index 2
+Heading error 74.1228
+Distance error 0.0548
+Current goal point x:0.8000 y:0.1167
+Current sums: head:3.8270 dist:1.3715
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 2
+Heading error 104.2687
+Distance error 0.0547
+Current goal point x:0.8000 y:0.1167
+Current sums: head:5.6468 dist:1.4262
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 2
+Heading error 118.4137
+Distance error 0.0603
+Current goal point x:0.8000 y:0.1167
+Current sums: head:7.7135 dist:1.4864
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 2
+Heading error 124.3954
+Distance error 0.0644
+Current goal point x:0.8000 y:0.1167
+Current sums: head:9.8847 dist:1.5509
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 2
+Heading error 128.0923
+Distance error 0.0674
+Current goal point x:0.8000 y:0.1167
+Current sums: head:12.1203 dist:1.6183
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 2
+Heading error 131.1503
+Distance error 0.0706
+Current goal point x:0.8000 y:0.1167
+Current sums: head:14.4093 dist:1.6889
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 2
+Heading error 134.9096
+Distance error 0.0747
+Current goal point x:0.8000 y:0.1167
+Current sums: head:16.7639 dist:1.7635
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 2
+Heading error 138.7381
+Distance error 0.0805
+Current goal point x:0.8000 y:0.1167
+Current sums: head:19.1853 dist:1.8441
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 2
+Heading error 141.6667
+Distance error 0.0851
+Current goal point x:0.8000 y:0.1167
+Current sums: head:21.6579 dist:1.9292
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 2
+Heading error 144.5105
+Distance error 0.0907
+Current goal point x:0.8000 y:0.1167
+Current sums: head:24.1801 dist:2.0199
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 2
+Heading error 146.7626
+Distance error 0.0965
+Current goal point x:0.8000 y:0.1167
+Current sums: head:26.7416 dist:2.1165
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 2
+Heading error 149.8636
+Distance error 0.1042
+Current goal point x:0.8000 y:0.1167
+Current sums: head:29.3572 dist:2.2207
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 2
+Heading error 152.5521
+Distance error 0.1121
+Current goal point x:0.8000 y:0.1167
+Current sums: head:32.0197 dist:2.3328
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 2
+Heading error 154.6590
+Distance error 0.1202
+Current goal point x:0.8000 y:0.1167
+Current sums: head:34.7190 dist:2.4529
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 2
+Heading error 156.8070
+Distance error 0.1311
+Current goal point x:0.8000 y:0.1167
+Current sums: head:37.4558 dist:2.5840
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 2
+Heading error 158.3800
+Distance error 0.1404
+Current goal point x:0.8000 y:0.1167
+Current sums: head:40.2201 dist:2.7244
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 2
+Heading error 160.1128
+Distance error 0.1516
+Current goal point x:0.8000 y:0.1167
+Current sums: head:43.0146 dist:2.8760
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 2
+Heading error 161.6652
+Distance error 0.1639
+Current goal point x:0.8000 y:0.1167
+Current sums: head:45.8362 dist:3.0398
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 2
+Heading error 163.4027
+Distance error 0.1782
+Current goal point x:0.8000 y:0.1167
+Current sums: head:48.6881 dist:3.2180
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 2
+Heading error 164.6945
+Distance error 0.1916
+Current goal point x:0.8000 y:0.1167
+Current sums: head:51.5625 dist:3.4096
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.22right:0.22
+
+Goal index 2
+Heading error 165.6309
+Distance error 0.2052
+Current goal point x:0.8000 y:0.1167
+Current sums: head:54.4533 dist:3.6148
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 2
+Heading error 166.7587
+Distance error 0.2207
+Current goal point x:0.8000 y:0.1167
+Current sums: head:57.3638 dist:3.8355
+    Driving - Stop due to overshoot
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 2
+Heading error 167.7531
+Distance error 0.2412
+Current goal point x:0.8000 y:0.1167
+Current sums: head:60.2917 dist:4.0767
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 3
+Heading error 46.5173
+Distance error 0.0907
+Current goal point x:1.0000 y:0.3750
+Current sums: head:0.8119 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 47.6508
+Distance error 0.0893
+Current goal point x:1.0000 y:0.3750
+Current sums: head:1.6435 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 46.7267
+Distance error 0.0893
+Current goal point x:1.0000 y:0.3750
+Current sums: head:2.4591 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 44.4474
+Distance error 0.0907
+Current goal point x:1.0000 y:0.3750
+Current sums: head:3.2348 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 42.4772
+Distance error 0.0900
+Current goal point x:1.0000 y:0.3750
+Current sums: head:3.9762 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 40.3365
+Distance error 0.0900
+Current goal point x:1.0000 y:0.3750
+Current sums: head:4.6802 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 36.8438
+Distance error 0.0908
+Current goal point x:1.0000 y:0.3750
+Current sums: head:5.3232 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 34.0875
+Distance error 0.0908
+Current goal point x:1.0000 y:0.3750
+Current sums: head:5.9182 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 30.9845
+Distance error 0.0908
+Current goal point x:1.0000 y:0.3750
+Current sums: head:6.4590 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 28.0663
+Distance error 0.0917
+Current goal point x:1.0000 y:0.3750
+Current sums: head:6.9488 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 24.5193
+Distance error 0.0917
+Current goal point x:1.0000 y:0.3750
+Current sums: head:7.3768 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 21.6350
+Distance error 0.0917
+Current goal point x:1.0000 y:0.3750
+Current sums: head:7.7544 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 18.0045
+Distance error 0.0926
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.0686 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 15.0816
+Distance error 0.0926
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.3318 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 11.7076
+Distance error 0.0926
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.5362 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 8.5254
+Distance error 0.0936
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.6850 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 5.2615
+Distance error 0.0936
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.7768 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 3
+Heading error 2.0384
+Distance error 0.0936
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.8124 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 3
+Heading error 1.0185
+Distance error 0.0946
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.8301 dist:0.0946
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 3
+Heading error 2.1081
+Distance error 0.0946
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.8669 dist:0.1893
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 3
+Heading error 3.4828
+Distance error 0.0926
+Current goal point x:1.0000 y:0.3750
+Current sums: head:8.9277 dist:0.2819
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 3
+Heading error 5.2254
+Distance error 0.0887
+Current goal point x:1.0000 y:0.3750
+Current sums: head:9.0189 dist:0.3706
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 3
+Heading error 6.1938
+Distance error 0.0847
+Current goal point x:1.0000 y:0.3750
+Current sums: head:9.1270 dist:0.4552
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 3
+Heading error 6.5757
+Distance error 0.0787
+Current goal point x:1.0000 y:0.3750
+Current sums: head:9.2418 dist:0.5340
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 3
+Heading error 7.5298
+Distance error 0.0728
+Current goal point x:1.0000 y:0.3750
+Current sums: head:9.3732 dist:0.6067
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 3
+Heading error 7.9631
+Distance error 0.0678
+Current goal point x:1.0000 y:0.3750
+Current sums: head:9.5122 dist:0.6745
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 3
+Heading error 8.9847
+Distance error 0.0629
+Current goal point x:1.0000 y:0.3750
+Current sums: head:9.6690 dist:0.7374
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 3
+Heading error 9.8000
+Distance error 0.0569
+Current goal point x:1.0000 y:0.3750
+Current sums: head:9.8400 dist:0.7943
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.06right:0.06
+
+Goal index 3
+Heading error 10.9255
+Distance error 0.0520
+Current goal point x:1.0000 y:0.3750
+Current sums: head:10.0307 dist:0.8464
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.06right:0.06
+
+Goal index 3
+Heading error 11.6562
+Distance error 0.0481
+Current goal point x:1.0000 y:0.3750
+Current sums: head:10.2342 dist:0.8945
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.06right:0.06
+
+Goal index 3
+Heading error 13.5658
+Distance error 0.0423
+Current goal point x:1.0000 y:0.3750
+Current sums: head:10.4709 dist:0.9367
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.05right:0.05
+
+Goal index 3
+Heading error 15.1976
+Distance error 0.0384
+Current goal point x:1.0000 y:0.3750
+Current sums: head:10.7362 dist:0.9751
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.05right:0.05
+
+Goal index 3
+Heading error 17.0357
+Distance error 0.0345
+Current goal point x:1.0000 y:0.3750
+Current sums: head:11.0335 dist:1.0096
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.05right:0.05
+
+Goal index 3
+Heading error 18.8564
+Distance error 0.0317
+Current goal point x:1.0000 y:0.3750
+Current sums: head:11.3626 dist:1.0413
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.04right:0.04
+
+Goal index 3
+Heading error 20.9804
+Distance error 0.0289
+Current goal point x:1.0000 y:0.3750
+Current sums: head:11.7288 dist:1.0702
+    Driving - Stop
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 3
+Heading error 23.3144
+Distance error 0.0261
+Current goal point x:1.0000 y:0.3750
+Current sums: head:12.1357 dist:1.0963
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 4
+Heading error 39.5997
+Distance error 0.3355
+Current goal point x:0.8000 y:0.6333
+Current sums: head:0.6911 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 39.6026
+Distance error 0.3355
+Current goal point x:0.8000 y:0.6333
+Current sums: head:1.3823 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 37.9962
+Distance error 0.3355
+Current goal point x:0.8000 y:0.6333
+Current sums: head:2.0455 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 35.9587
+Distance error 0.3355
+Current goal point x:0.8000 y:0.6333
+Current sums: head:2.6731 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 33.8615
+Distance error 0.3364
+Current goal point x:0.8000 y:0.6333
+Current sums: head:3.2641 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 31.1569
+Distance error 0.3364
+Current goal point x:0.8000 y:0.6333
+Current sums: head:3.8079 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 28.5476
+Distance error 0.3364
+Current goal point x:0.8000 y:0.6333
+Current sums: head:4.3061 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 25.3065
+Distance error 0.3364
+Current goal point x:0.8000 y:0.6333
+Current sums: head:4.7478 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 22.6272
+Distance error 0.3373
+Current goal point x:0.8000 y:0.6333
+Current sums: head:5.1427 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 19.0296
+Distance error 0.3373
+Current goal point x:0.8000 y:0.6333
+Current sums: head:5.4749 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 15.9696
+Distance error 0.3373
+Current goal point x:0.8000 y:0.6333
+Current sums: head:5.7536 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 12.9591
+Distance error 0.3383
+Current goal point x:0.8000 y:0.6333
+Current sums: head:5.9798 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 9.2154
+Distance error 0.3383
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.1406 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 6.2965
+Distance error 0.3383
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.2505 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 4
+Heading error 2.8906
+Distance error 0.3393
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.3009 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 4
+Heading error 0.1016
+Distance error 0.3393
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.3027 dist:0.3393
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.31right:0.31
+
+Goal index 4
+Heading error 1.1565
+Distance error 0.3393
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.3229 dist:0.6786
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.32right:0.32
+
+Goal index 4
+Heading error 0.9574
+Distance error 0.3343
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.3396 dist:1.0128
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.32right:0.32
+
+Goal index 4
+Heading error 1.1648
+Distance error 0.3083
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.3599 dist:1.3211
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.30right:0.30
+
+Goal index 4
+Heading error 2.4775
+Distance error 0.2853
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.4032 dist:1.6064
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.28right:0.28
+
+Goal index 4
+Heading error 3.1914
+Distance error 0.2573
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.4589 dist:1.8638
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.26right:0.26
+
+Goal index 4
+Heading error 3.7930
+Distance error 0.2364
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.5251 dist:2.1002
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 4
+Heading error 4.4887
+Distance error 0.2164
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.6034 dist:2.3166
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.23right:0.23
+
+Goal index 4
+Heading error 5.1711
+Distance error 0.1985
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.6937 dist:2.5151
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.22right:0.22
+
+Goal index 4
+Heading error 5.8689
+Distance error 0.1776
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.7961 dist:2.6927
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 4
+Heading error 6.5518
+Distance error 0.1617
+Current goal point x:0.8000 y:0.6333
+Current sums: head:6.9105 dist:2.8544
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 4
+Heading error 7.4035
+Distance error 0.1468
+Current goal point x:0.8000 y:0.6333
+Current sums: head:7.0397 dist:3.0013
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 4
+Heading error 8.5796
+Distance error 0.1300
+Current goal point x:0.8000 y:0.6333
+Current sums: head:7.1894 dist:3.1312
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 4
+Heading error 9.5034
+Distance error 0.1172
+Current goal point x:0.8000 y:0.6333
+Current sums: head:7.3553 dist:3.2484
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 4
+Heading error 10.5611
+Distance error 0.1053
+Current goal point x:0.8000 y:0.6333
+Current sums: head:7.5396 dist:3.3537
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 4
+Heading error 12.2439
+Distance error 0.0916
+Current goal point x:0.8000 y:0.6333
+Current sums: head:7.7533 dist:3.4453
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 4
+Heading error 14.0004
+Distance error 0.0809
+Current goal point x:0.8000 y:0.6333
+Current sums: head:7.9977 dist:3.5262
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 4
+Heading error 16.1439
+Distance error 0.0712
+Current goal point x:0.8000 y:0.6333
+Current sums: head:8.2794 dist:3.5975
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 4
+Heading error 18.6174
+Distance error 0.0617
+Current goal point x:0.8000 y:0.6333
+Current sums: head:8.6044 dist:3.6592
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 4
+Heading error 21.4792
+Distance error 0.0532
+Current goal point x:0.8000 y:0.6333
+Current sums: head:8.9792 dist:3.7124
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 4
+Heading error 24.8784
+Distance error 0.0459
+Current goal point x:0.8000 y:0.6333
+Current sums: head:9.4135 dist:3.7583
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 4
+Heading error 30.5673
+Distance error 0.0379
+Current goal point x:0.8000 y:0.6333
+Current sums: head:9.9470 dist:3.7962
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 4
+Heading error 37.0152
+Distance error 0.0321
+Current goal point x:0.8000 y:0.6333
+Current sums: head:10.5930 dist:3.8282
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 4
+Heading error 45.9535
+Distance error 0.0268
+Current goal point x:0.8000 y:0.6333
+Current sums: head:11.3950 dist:3.8550
+    Driving - Stop
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 4
+Heading error 58.8584
+Distance error 0.0225
+Current goal point x:0.8000 y:0.6333
+Current sums: head:12.4223 dist:3.8775
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 5
+Heading error 27.7172
+Distance error 0.3199
+Current goal point x:0.5000 y:0.7500
+Current sums: head:0.4838 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 27.6817
+Distance error 0.3191
+Current goal point x:0.5000 y:0.7500
+Current sums: head:0.9669 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 26.2636
+Distance error 0.3191
+Current goal point x:0.5000 y:0.7500
+Current sums: head:1.4253 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 23.8982
+Distance error 0.3200
+Current goal point x:0.5000 y:0.7500
+Current sums: head:1.8424 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 21.9902
+Distance error 0.3200
+Current goal point x:0.5000 y:0.7500
+Current sums: head:2.2262 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 19.2365
+Distance error 0.3200
+Current goal point x:0.5000 y:0.7500
+Current sums: head:2.5619 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 16.7169
+Distance error 0.3200
+Current goal point x:0.5000 y:0.7500
+Current sums: head:2.8537 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 13.4142
+Distance error 0.3210
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.0878 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 10.5453
+Distance error 0.3210
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.2719 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 7.3138
+Distance error 0.3219
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.3995 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 4.1807
+Distance error 0.3219
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.4725 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 5
+Heading error 1.0713
+Distance error 0.3219
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.4912 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 5
+Heading error 1.8841
+Distance error 0.3219
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.5241 dist:0.3219
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.29right:0.29
+
+Goal index 5
+Heading error 2.9619
+Distance error 0.3229
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.5758 dist:0.6449
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.30right:0.30
+
+Goal index 5
+Heading error 3.1684
+Distance error 0.3140
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.6311 dist:0.9589
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.30right:0.30
+
+Goal index 5
+Heading error 3.7691
+Distance error 0.2940
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.6968 dist:1.2529
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.28right:0.28
+
+Goal index 5
+Heading error 4.5244
+Distance error 0.2661
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.7758 dist:1.5189
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.26right:0.26
+
+Goal index 5
+Heading error 5.6231
+Distance error 0.2452
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.8739 dist:1.7641
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.25right:0.25
+
+Goal index 5
+Heading error 6.4255
+Distance error 0.2263
+Current goal point x:0.5000 y:0.7500
+Current sums: head:3.9861 dist:1.9904
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.23right:0.23
+
+Goal index 5
+Heading error 6.9872
+Distance error 0.2084
+Current goal point x:0.5000 y:0.7500
+Current sums: head:4.1080 dist:2.1988
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.22right:0.22
+
+Goal index 5
+Heading error 8.1367
+Distance error 0.1866
+Current goal point x:0.5000 y:0.7500
+Current sums: head:4.2501 dist:2.3854
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 5
+Heading error 9.2506
+Distance error 0.1708
+Current goal point x:0.5000 y:0.7500
+Current sums: head:4.4115 dist:2.5562
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 5
+Heading error 10.3605
+Distance error 0.1550
+Current goal point x:0.5000 y:0.7500
+Current sums: head:4.5923 dist:2.7113
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 5
+Heading error 11.6040
+Distance error 0.1384
+Current goal point x:0.5000 y:0.7500
+Current sums: head:4.7949 dist:2.8496
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 5
+Heading error 12.8114
+Distance error 0.1256
+Current goal point x:0.5000 y:0.7500
+Current sums: head:5.0185 dist:2.9753
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 5
+Heading error 14.3897
+Distance error 0.1130
+Current goal point x:0.5000 y:0.7500
+Current sums: head:5.2696 dist:3.0883
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 5
+Heading error 16.3053
+Distance error 0.0995
+Current goal point x:0.5000 y:0.7500
+Current sums: head:5.5542 dist:3.1878
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 5
+Heading error 18.1717
+Distance error 0.0900
+Current goal point x:0.5000 y:0.7500
+Current sums: head:5.8713 dist:3.2777
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 5
+Heading error 20.5223
+Distance error 0.0796
+Current goal point x:0.5000 y:0.7500
+Current sums: head:6.2295 dist:3.3573
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 5
+Heading error 22.8476
+Distance error 0.0712
+Current goal point x:0.5000 y:0.7500
+Current sums: head:6.6283 dist:3.4285
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 5
+Heading error 26.9051
+Distance error 0.0612
+Current goal point x:0.5000 y:0.7500
+Current sums: head:7.0979 dist:3.4897
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 5
+Heading error 31.4705
+Distance error 0.0534
+Current goal point x:0.5000 y:0.7500
+Current sums: head:7.6471 dist:3.5431
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 5
+Heading error 36.0277
+Distance error 0.0475
+Current goal point x:0.5000 y:0.7500
+Current sums: head:8.2759 dist:3.5906
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 5
+Heading error 43.5129
+Distance error 0.0406
+Current goal point x:0.5000 y:0.7500
+Current sums: head:9.0354 dist:3.6312
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 5
+Heading error 53.9390
+Distance error 0.0347
+Current goal point x:0.5000 y:0.7500
+Current sums: head:9.9768 dist:3.6659
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 5
+Heading error 62.8820
+Distance error 0.0315
+Current goal point x:0.5000 y:0.7500
+Current sums: head:11.0743 dist:3.6974
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 5
+Heading error 75.1880
+Distance error 0.0290
+Current goal point x:0.5000 y:0.7500
+Current sums: head:12.3866 dist:3.7264
+    Driving - Stop
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 5
+Heading error 87.4013
+Distance error 0.0281
+Current goal point x:0.5000 y:0.7500
+Current sums: head:13.9120 dist:3.7544
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 6
+Heading error 36.5714
+Distance error 0.3031
+Current goal point x:0.2000 y:0.6333
+Current sums: head:0.6383 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 36.5870
+Distance error 0.3031
+Current goal point x:0.2000 y:0.6333
+Current sums: head:1.2769 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 34.7396
+Distance error 0.3031
+Current goal point x:0.2000 y:0.6333
+Current sums: head:1.8832 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 32.5530
+Distance error 0.3031
+Current goal point x:0.2000 y:0.6333
+Current sums: head:2.4513 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 30.6579
+Distance error 0.3040
+Current goal point x:0.2000 y:0.6333
+Current sums: head:2.9864 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 27.6666
+Distance error 0.3040
+Current goal point x:0.2000 y:0.6333
+Current sums: head:3.4693 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 24.9196
+Distance error 0.3040
+Current goal point x:0.2000 y:0.6333
+Current sums: head:3.9042 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 22.0114
+Distance error 0.3040
+Current goal point x:0.2000 y:0.6333
+Current sums: head:4.2884 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 18.7142
+Distance error 0.3049
+Current goal point x:0.2000 y:0.6333
+Current sums: head:4.6150 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 15.8198
+Distance error 0.3049
+Current goal point x:0.2000 y:0.6333
+Current sums: head:4.8911 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 12.2605
+Distance error 0.3049
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.1051 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 9.2418
+Distance error 0.3059
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.2664 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 6.1087
+Distance error 0.3059
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.3730 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 6
+Heading error 2.5470
+Distance error 0.3059
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.4175 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 6
+Heading error 0.2906
+Distance error 0.3069
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.4225 dist:0.3069
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.28right:0.28
+
+Goal index 6
+Heading error 0.9591
+Distance error 0.3069
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.4393 dist:0.6138
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.29right:0.29
+
+Goal index 6
+Heading error 0.9447
+Distance error 0.3019
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.4558 dist:0.9157
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.29right:0.29
+
+Goal index 6
+Heading error 1.2486
+Distance error 0.2829
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.4776 dist:1.1986
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.27right:0.27
+
+Goal index 6
+Heading error 2.2222
+Distance error 0.2569
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.5164 dist:1.4555
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.25right:0.25
+
+Goal index 6
+Heading error 3.0267
+Distance error 0.2369
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.5692 dist:1.6924
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 6
+Heading error 3.6671
+Distance error 0.2180
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.6332 dist:1.9104
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.22right:0.22
+
+Goal index 6
+Heading error 4.3726
+Distance error 0.1970
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.7095 dist:2.1075
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 6
+Heading error 4.8524
+Distance error 0.1811
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.7942 dist:2.2885
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 6
+Heading error 5.4359
+Distance error 0.1652
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.8891 dist:2.4537
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 6
+Heading error 5.9648
+Distance error 0.1502
+Current goal point x:0.2000 y:0.6333
+Current sums: head:5.9932 dist:2.6039
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 6
+Heading error 6.9060
+Distance error 0.1343
+Current goal point x:0.2000 y:0.6333
+Current sums: head:6.1137 dist:2.7383
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 6
+Heading error 7.6044
+Distance error 0.1214
+Current goal point x:0.2000 y:0.6333
+Current sums: head:6.2464 dist:2.8597
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 6
+Heading error 8.5170
+Distance error 0.1096
+Current goal point x:0.2000 y:0.6333
+Current sums: head:6.3951 dist:2.9693
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 6
+Heading error 9.7429
+Distance error 0.0957
+Current goal point x:0.2000 y:0.6333
+Current sums: head:6.5651 dist:3.0650
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 6
+Heading error 10.8131
+Distance error 0.0859
+Current goal point x:0.2000 y:0.6333
+Current sums: head:6.7538 dist:3.1509
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 6
+Heading error 12.2278
+Distance error 0.0761
+Current goal point x:0.2000 y:0.6333
+Current sums: head:6.9673 dist:3.2270
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 6
+Heading error 14.3745
+Distance error 0.0654
+Current goal point x:0.2000 y:0.6333
+Current sums: head:7.2181 dist:3.2924
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 6
+Heading error 16.3467
+Distance error 0.0577
+Current goal point x:0.2000 y:0.6333
+Current sums: head:7.5034 dist:3.3500
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 6
+Heading error 19.3749
+Distance error 0.0491
+Current goal point x:0.2000 y:0.6333
+Current sums: head:7.8416 dist:3.3991
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 6
+Heading error 23.0471
+Distance error 0.0416
+Current goal point x:0.2000 y:0.6333
+Current sums: head:8.2438 dist:3.4408
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 6
+Heading error 27.5781
+Distance error 0.0353
+Current goal point x:0.2000 y:0.6333
+Current sums: head:8.7252 dist:3.4761
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 6
+Heading error 35.1341
+Distance error 0.0285
+Current goal point x:0.2000 y:0.6333
+Current sums: head:9.3384 dist:3.5046
+    Driving - Stop
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 6
+Heading error 43.4659
+Distance error 0.0238
+Current goal point x:0.2000 y:0.6333
+Current sums: head:10.0970 dist:3.5284
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 7
+Heading error 51.3372
+Distance error 0.2533
+Current goal point x:0.0000 y:0.7500
+Current sums: head:0.8960 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 51.3764
+Distance error 0.2533
+Current goal point x:0.0000 y:0.7500
+Current sums: head:1.7927 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 49.8042
+Distance error 0.2533
+Current goal point x:0.0000 y:0.7500
+Current sums: head:2.6619 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 47.7942
+Distance error 0.2533
+Current goal point x:0.0000 y:0.7500
+Current sums: head:3.4961 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 45.4398
+Distance error 0.2533
+Current goal point x:0.0000 y:0.7500
+Current sums: head:4.2892 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 43.1565
+Distance error 0.2533
+Current goal point x:0.0000 y:0.7500
+Current sums: head:5.0424 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 39.7614
+Distance error 0.2540
+Current goal point x:0.0000 y:0.7500
+Current sums: head:5.7364 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 36.6870
+Distance error 0.2540
+Current goal point x:0.0000 y:0.7500
+Current sums: head:6.3767 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 34.0140
+Distance error 0.2540
+Current goal point x:0.0000 y:0.7500
+Current sums: head:6.9703 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 30.6681
+Distance error 0.2540
+Current goal point x:0.0000 y:0.7500
+Current sums: head:7.5056 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 27.5025
+Distance error 0.2549
+Current goal point x:0.0000 y:0.7500
+Current sums: head:7.9856 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 24.3745
+Distance error 0.2549
+Current goal point x:0.0000 y:0.7500
+Current sums: head:8.4110 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 21.2375
+Distance error 0.2549
+Current goal point x:0.0000 y:0.7500
+Current sums: head:8.7817 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 17.3073
+Distance error 0.2549
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.0837 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 14.3453
+Distance error 0.2559
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.3341 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 11.3775
+Distance error 0.2559
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.5327 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 7.5906
+Distance error 0.2569
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.6652 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 4.5860
+Distance error 0.2569
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.7452 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 7
+Heading error 1.0890
+Distance error 0.2579
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.7642 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 7
+Heading error 1.9223
+Distance error 0.2579
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.7978 dist:0.2579
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 7
+Heading error 2.1009
+Distance error 0.2579
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.8344 dist:0.5158
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 7
+Heading error 1.9897
+Distance error 0.2529
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.8692 dist:0.7687
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 7
+Heading error 3.0437
+Distance error 0.2349
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.9223 dist:1.0036
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.23right:0.23
+
+Goal index 7
+Heading error 4.1066
+Distance error 0.2170
+Current goal point x:0.0000 y:0.7500
+Current sums: head:9.9940 dist:1.2206
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 7
+Heading error 5.0448
+Distance error 0.1980
+Current goal point x:0.0000 y:0.7500
+Current sums: head:10.0820 dist:1.4186
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 7
+Heading error 5.8477
+Distance error 0.1831
+Current goal point x:0.0000 y:0.7500
+Current sums: head:10.1841 dist:1.6018
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 7
+Heading error 6.7891
+Distance error 0.1652
+Current goal point x:0.0000 y:0.7500
+Current sums: head:10.3026 dist:1.7670
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 7
+Heading error 7.3898
+Distance error 0.1523
+Current goal point x:0.0000 y:0.7500
+Current sums: head:10.4315 dist:1.9193
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 7
+Heading error 7.9380
+Distance error 0.1394
+Current goal point x:0.0000 y:0.7500
+Current sums: head:10.5701 dist:2.0587
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 7
+Heading error 8.6076
+Distance error 0.1276
+Current goal point x:0.0000 y:0.7500
+Current sums: head:10.7203 dist:2.1863
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 7
+Heading error 9.6399
+Distance error 0.1157
+Current goal point x:0.0000 y:0.7500
+Current sums: head:10.8886 dist:2.3020
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 7
+Heading error 10.9760
+Distance error 0.1029
+Current goal point x:0.0000 y:0.7500
+Current sums: head:11.0801 dist:2.4050
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 7
+Heading error 12.1209
+Distance error 0.0931
+Current goal point x:0.0000 y:0.7500
+Current sums: head:11.2917 dist:2.4981
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 7
+Heading error 13.4063
+Distance error 0.0844
+Current goal point x:0.0000 y:0.7500
+Current sums: head:11.5257 dist:2.5824
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 7
+Heading error 15.1663
+Distance error 0.0737
+Current goal point x:0.0000 y:0.7500
+Current sums: head:11.7904 dist:2.6561
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 7
+Heading error 17.0630
+Distance error 0.0650
+Current goal point x:0.0000 y:0.7500
+Current sums: head:12.0882 dist:2.7212
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 7
+Heading error 19.7614
+Distance error 0.0565
+Current goal point x:0.0000 y:0.7500
+Current sums: head:12.4331 dist:2.7777
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 7
+Heading error 22.9851
+Distance error 0.0500
+Current goal point x:0.0000 y:0.7500
+Current sums: head:12.8342 dist:2.8277
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 7
+Heading error 27.2691
+Distance error 0.0427
+Current goal point x:0.0000 y:0.7500
+Current sums: head:13.3102 dist:2.8704
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 7
+Heading error 30.4673
+Distance error 0.0384
+Current goal point x:0.0000 y:0.7500
+Current sums: head:13.8419 dist:2.9087
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 7
+Heading error 36.8005
+Distance error 0.0325
+Current goal point x:0.0000 y:0.7500
+Current sums: head:14.4842 dist:2.9413
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 7
+Heading error 43.9191
+Distance error 0.0279
+Current goal point x:0.0000 y:0.7500
+Current sums: head:15.2508 dist:2.9692
+    Driving - Stop
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 7
+Heading error 54.2177
+Distance error 0.0240
+Current goal point x:0.0000 y:0.7500
+Current sums: head:16.1970 dist:2.9932
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 8
+Heading error 179.1159
+Distance error 0.2199
+Current goal point x:0.2000 y:0.6333
+Current sums: head:3.1262 dist:0.0000
+    Turning - Right
+speeds: left:0.32right:-0.32
+
+Goal index 8
+Heading error 179.1287
+Distance error 0.2199
+Current goal point x:0.2000 y:0.6333
+Current sums: head:6.2525 dist:0.0000
+    Turning - Right
+speeds: left:0.33right:-0.33
+
+Goal index 8
+Heading error 175.7853
+Distance error 0.2209
+Current goal point x:0.2000 y:0.6333
+Current sums: head:9.3206 dist:0.0000
+    Turning - Right
+speeds: left:0.33right:-0.33
+
+Goal index 8
+Heading error 165.2185
+Distance error 0.2219
+Current goal point x:0.2000 y:0.6333
+Current sums: head:12.2042 dist:0.0000
+    Turning - Right
+speeds: left:0.32right:-0.32
+
+Goal index 8
+Heading error 153.3264
+Distance error 0.2210
+Current goal point x:0.2000 y:0.6333
+Current sums: head:14.8802 dist:0.0000
+    Turning - Right
+speeds: left:0.30right:-0.30
+
+Goal index 8
+Heading error 141.5312
+Distance error 0.2202
+Current goal point x:0.2000 y:0.6333
+Current sums: head:17.3504 dist:0.0000
+    Turning - Right
+speeds: left:0.29right:-0.29
+
+Goal index 8
+Heading error 130.8327
+Distance error 0.2202
+Current goal point x:0.2000 y:0.6333
+Current sums: head:19.6339 dist:0.0000
+    Turning - Right
+speeds: left:0.28right:-0.28
+
+Goal index 8
+Heading error 119.4684
+Distance error 0.2197
+Current goal point x:0.2000 y:0.6333
+Current sums: head:21.7190 dist:0.0000
+    Turning - Right
+speeds: left:0.26right:-0.26
+
+Goal index 8
+Heading error 109.3820
+Distance error 0.2197
+Current goal point x:0.2000 y:0.6333
+Current sums: head:23.6281 dist:0.0000
+    Turning - Right
+speeds: left:0.25right:-0.25
+
+Goal index 8
+Heading error 99.4633
+Distance error 0.2196
+Current goal point x:0.2000 y:0.6333
+Current sums: head:25.3640 dist:0.0000
+    Turning - Right
+speeds: left:0.24right:-0.24
+
+Goal index 8
+Heading error 89.9999
+Distance error 0.2196
+Current goal point x:0.2000 y:0.6333
+Current sums: head:26.9348 dist:0.0000
+    Turning - Right
+speeds: left:0.22right:-0.22
+
+Goal index 8
+Heading error 81.1753
+Distance error 0.2196
+Current goal point x:0.2000 y:0.6333
+Current sums: head:28.3516 dist:0.0000
+    Turning - Right
+speeds: left:0.21right:-0.21
+
+Goal index 8
+Heading error 73.2162
+Distance error 0.2196
+Current goal point x:0.2000 y:0.6333
+Current sums: head:29.6295 dist:0.0000
+    Turning - Right
+speeds: left:0.20right:-0.20
+
+Goal index 8
+Heading error 65.1739
+Distance error 0.2196
+Current goal point x:0.2000 y:0.6333
+Current sums: head:30.7670 dist:0.0000
+    Turning - Right
+speeds: left:0.19right:-0.19
+
+Goal index 8
+Heading error 57.1363
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:31.7642 dist:0.0000
+    Turning - Right
+speeds: left:0.18right:-0.18
+
+Goal index 8
+Heading error 50.6655
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:32.6485 dist:0.0000
+    Turning - Right
+speeds: left:0.17right:-0.17
+
+Goal index 8
+Heading error 44.1025
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:33.4182 dist:0.0000
+    Turning - Right
+speeds: left:0.16right:-0.16
+
+Goal index 8
+Heading error 38.1367
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:34.0838 dist:0.0000
+    Turning - Right
+speeds: left:0.15right:-0.15
+
+Goal index 8
+Heading error 32.6662
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:34.6539 dist:0.0000
+    Turning - Right
+speeds: left:0.14right:-0.14
+
+Goal index 8
+Heading error 27.0103
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:35.1254 dist:0.0000
+    Turning - Right
+speeds: left:0.13right:-0.13
+
+Goal index 8
+Heading error 21.7856
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:35.5056 dist:0.0000
+    Turning - Right
+speeds: left:0.13right:-0.13
+
+Goal index 8
+Heading error 16.5879
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:35.7951 dist:0.0000
+    Turning - Right
+speeds: left:0.12right:-0.12
+
+Goal index 8
+Heading error 11.9272
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.0033 dist:0.0000
+    Turning - Right
+speeds: left:0.11right:-0.11
+
+Goal index 8
+Heading error 8.0931
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.1445 dist:0.0000
+    Turning - Right
+speeds: left:0.10right:-0.10
+
+Goal index 8
+Heading error 4.1553
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.2171 dist:0.0000
+    Turning - Right
+speeds: left:0.10right:-0.10
+
+Goal index 8
+Heading error 0.0648
+Distance error 0.2201
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.2182 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 8
+Heading error 3.6332
+Distance error 0.2211
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.2816 dist:0.2211
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 8
+Heading error 3.6279
+Distance error 0.2211
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.3449 dist:0.4423
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 8
+Heading error 3.4908
+Distance error 0.2161
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.4058 dist:0.6584
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 8
+Heading error 4.5551
+Distance error 0.2042
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.4853 dist:0.8626
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 8
+Heading error 5.5471
+Distance error 0.1863
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.5822 dist:1.0489
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 8
+Heading error 6.5126
+Distance error 0.1733
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.6958 dist:1.2222
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 8
+Heading error 7.6729
+Distance error 0.1605
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.8297 dist:1.3827
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 8
+Heading error 8.5023
+Distance error 0.1456
+Current goal point x:0.2000 y:0.6333
+Current sums: head:36.9781 dist:1.5283
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 8
+Heading error 9.1886
+Distance error 0.1337
+Current goal point x:0.2000 y:0.6333
+Current sums: head:37.1385 dist:1.6620
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 8
+Heading error 10.2027
+Distance error 0.1219
+Current goal point x:0.2000 y:0.6333
+Current sums: head:37.3166 dist:1.7839
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 8
+Heading error 11.4499
+Distance error 0.1101
+Current goal point x:0.2000 y:0.6333
+Current sums: head:37.5164 dist:1.8941
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 8
+Heading error 12.8748
+Distance error 0.0994
+Current goal point x:0.2000 y:0.6333
+Current sums: head:37.7411 dist:1.9934
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 8
+Heading error 14.1991
+Distance error 0.0906
+Current goal point x:0.2000 y:0.6333
+Current sums: head:37.9889 dist:2.0841
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 8
+Heading error 15.9338
+Distance error 0.0800
+Current goal point x:0.2000 y:0.6333
+Current sums: head:38.2670 dist:2.1641
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 8
+Heading error 17.5163
+Distance error 0.0723
+Current goal point x:0.2000 y:0.6333
+Current sums: head:38.5728 dist:2.2364
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 8
+Heading error 19.7014
+Distance error 0.0648
+Current goal point x:0.2000 y:0.6333
+Current sums: head:38.9166 dist:2.3012
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 8
+Heading error 22.6542
+Distance error 0.0573
+Current goal point x:0.2000 y:0.6333
+Current sums: head:39.3120 dist:2.3585
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 8
+Heading error 25.6331
+Distance error 0.0509
+Current goal point x:0.2000 y:0.6333
+Current sums: head:39.7594 dist:2.4094
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 8
+Heading error 30.1193
+Distance error 0.0438
+Current goal point x:0.2000 y:0.6333
+Current sums: head:40.2851 dist:2.4532
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 8
+Heading error 34.6428
+Distance error 0.0388
+Current goal point x:0.2000 y:0.6333
+Current sums: head:40.8897 dist:2.4920
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 8
+Heading error 39.2925
+Distance error 0.0348
+Current goal point x:0.2000 y:0.6333
+Current sums: head:41.5755 dist:2.5267
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 8
+Heading error 46.6968
+Distance error 0.0304
+Current goal point x:0.2000 y:0.6333
+Current sums: head:42.3905 dist:2.5571
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 8
+Heading error 55.9097
+Distance error 0.0266
+Current goal point x:0.2000 y:0.6333
+Current sums: head:43.3663 dist:2.5837
+    Driving - Stop
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 8
+Heading error 63.9864
+Distance error 0.0246
+Current goal point x:0.2000 y:0.6333
+Current sums: head:44.4831 dist:2.6083
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 9
+Heading error 96.3591
+Distance error 0.3477
+Current goal point x:0.0000 y:0.3750
+Current sums: head:1.6818 dist:0.0000
+    Turning - Left
+speeds: left:-0.17right:0.17
+
+Goal index 9
+Heading error 96.3337
+Distance error 0.3477
+Current goal point x:0.0000 y:0.3750
+Current sums: head:3.3631 dist:0.0000
+    Turning - Left
+speeds: left:-0.18right:0.18
+
+Goal index 9
+Heading error 94.3242
+Distance error 0.3477
+Current goal point x:0.0000 y:0.3750
+Current sums: head:5.0094 dist:0.0000
+    Turning - Left
+speeds: left:-0.18right:0.18
+
+Goal index 9
+Heading error 89.4670
+Distance error 0.3477
+Current goal point x:0.0000 y:0.3750
+Current sums: head:6.5709 dist:0.0000
+    Turning - Left
+speeds: left:-0.17right:0.17
+
+Goal index 9
+Heading error 84.0016
+Distance error 0.3477
+Current goal point x:0.0000 y:0.3750
+Current sums: head:8.0370 dist:0.0000
+    Turning - Left
+speeds: left:-0.17right:0.17
+
+Goal index 9
+Heading error 78.6168
+Distance error 0.3479
+Current goal point x:0.0000 y:0.3750
+Current sums: head:9.4091 dist:0.0000
+    Turning - Left
+speeds: left:-0.16right:0.16
+
+Goal index 9
+Heading error 72.9405
+Distance error 0.3479
+Current goal point x:0.0000 y:0.3750
+Current sums: head:10.6822 dist:0.0000
+    Turning - Left
+speeds: left:-0.15right:0.15
+
+Goal index 9
+Heading error 67.5243
+Distance error 0.3483
+Current goal point x:0.0000 y:0.3750
+Current sums: head:11.8607 dist:0.0000
+    Turning - Left
+speeds: left:-0.15right:0.15
+
+Goal index 9
+Heading error 61.9781
+Distance error 0.3483
+Current goal point x:0.0000 y:0.3750
+Current sums: head:12.9424 dist:0.0000
+    Turning - Left
+speeds: left:-0.14right:0.14
+
+Goal index 9
+Heading error 56.5778
+Distance error 0.3483
+Current goal point x:0.0000 y:0.3750
+Current sums: head:13.9299 dist:0.0000
+    Turning - Left
+speeds: left:-0.13right:0.13
+
+Goal index 9
+Heading error 51.2845
+Distance error 0.3483
+Current goal point x:0.0000 y:0.3750
+Current sums: head:14.8250 dist:0.0000
+    Turning - Left
+speeds: left:-0.13right:0.13
+
+Goal index 9
+Heading error 46.4632
+Distance error 0.3490
+Current goal point x:0.0000 y:0.3750
+Current sums: head:15.6359 dist:0.0000
+    Turning - Left
+speeds: left:-0.12right:0.12
+
+Goal index 9
+Heading error 41.7749
+Distance error 0.3490
+Current goal point x:0.0000 y:0.3750
+Current sums: head:16.3650 dist:0.0000
+    Turning - Left
+speeds: left:-0.11right:0.11
+
+Goal index 9
+Heading error 37.8813
+Distance error 0.3490
+Current goal point x:0.0000 y:0.3750
+Current sums: head:17.0262 dist:0.0000
+    Turning - Left
+speeds: left:-0.11right:0.11
+
+Goal index 9
+Heading error 33.7216
+Distance error 0.3490
+Current goal point x:0.0000 y:0.3750
+Current sums: head:17.6147 dist:0.0000
+    Turning - Left
+speeds: left:-0.10right:0.10
+
+Goal index 9
+Heading error 29.9549
+Distance error 0.3490
+Current goal point x:0.0000 y:0.3750
+Current sums: head:18.1375 dist:0.0000
+    Turning - Left
+speeds: left:-0.10right:0.10
+
+Goal index 9
+Heading error 26.2090
+Distance error 0.3499
+Current goal point x:0.0000 y:0.3750
+Current sums: head:18.5950 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 9
+Heading error 22.7682
+Distance error 0.3499
+Current goal point x:0.0000 y:0.3750
+Current sums: head:18.9923 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 9
+Heading error 19.4889
+Distance error 0.3499
+Current goal point x:0.0000 y:0.3750
+Current sums: head:19.3325 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 9
+Heading error 16.4439
+Distance error 0.3499
+Current goal point x:0.0000 y:0.3750
+Current sums: head:19.6195 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 9
+Heading error 13.2093
+Distance error 0.3508
+Current goal point x:0.0000 y:0.3750
+Current sums: head:19.8500 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 9
+Heading error 10.2532
+Distance error 0.3508
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.0290 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 9
+Heading error 7.2402
+Distance error 0.3508
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.1553 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 9
+Heading error 3.6239
+Distance error 0.3518
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.2186 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 9
+Heading error 0.7454
+Distance error 0.3518
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.2316 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 9
+Heading error 2.4673
+Distance error 0.3518
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.2747 dist:0.3518
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.32right:0.32
+
+Goal index 9
+Heading error 3.4306
+Distance error 0.3518
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.3345 dist:0.7037
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.33right:0.33
+
+Goal index 9
+Heading error 3.4259
+Distance error 0.3468
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.3943 dist:1.0505
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.33right:0.33
+
+Goal index 9
+Heading error 3.9918
+Distance error 0.3189
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.4640 dist:1.3694
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.31right:0.31
+
+Goal index 9
+Heading error 5.1090
+Distance error 0.2940
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.5532 dist:1.6634
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.29right:0.29
+
+Goal index 9
+Heading error 5.8118
+Distance error 0.2711
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.6546 dist:1.9345
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.27right:0.27
+
+Goal index 9
+Heading error 6.7575
+Distance error 0.2493
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.7725 dist:2.1838
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.26right:0.26
+
+Goal index 9
+Heading error 7.6986
+Distance error 0.2235
+Current goal point x:0.0000 y:0.3750
+Current sums: head:20.9069 dist:2.4072
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 9
+Heading error 8.4512
+Distance error 0.2047
+Current goal point x:0.0000 y:0.3750
+Current sums: head:21.0544 dist:2.6119
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.22right:0.22
+
+Goal index 9
+Heading error 9.5888
+Distance error 0.1829
+Current goal point x:0.0000 y:0.3750
+Current sums: head:21.2218 dist:2.7948
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 9
+Heading error 10.5472
+Distance error 0.1672
+Current goal point x:0.0000 y:0.3750
+Current sums: head:21.4059 dist:2.9620
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 9
+Heading error 11.7688
+Distance error 0.1515
+Current goal point x:0.0000 y:0.3750
+Current sums: head:21.6113 dist:3.1135
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 9
+Heading error 13.1619
+Distance error 0.1349
+Current goal point x:0.0000 y:0.3750
+Current sums: head:21.8410 dist:3.2483
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 9
+Heading error 14.7318
+Distance error 0.1213
+Current goal point x:0.0000 y:0.3750
+Current sums: head:22.0981 dist:3.3696
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 9
+Heading error 16.3383
+Distance error 0.1088
+Current goal point x:0.0000 y:0.3750
+Current sums: head:22.3833 dist:3.4784
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 9
+Heading error 17.8766
+Distance error 0.0982
+Current goal point x:0.0000 y:0.3750
+Current sums: head:22.6953 dist:3.5766
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 9
+Heading error 26.3682
+Distance error 0.0676
+Current goal point x:0.0000 y:0.3750
+Current sums: head:23.1555 dist:3.6442
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 9
+Heading error 31.2024
+Distance error 0.0579
+Current goal point x:0.0000 y:0.3750
+Current sums: head:23.7001 dist:3.7021
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 9
+Heading error 37.6296
+Distance error 0.0497
+Current goal point x:0.0000 y:0.3750
+Current sums: head:24.3568 dist:3.7518
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 9
+Heading error 44.3412
+Distance error 0.0436
+Current goal point x:0.0000 y:0.3750
+Current sums: head:25.1307 dist:3.7954
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 9
+Heading error 51.4341
+Distance error 0.0389
+Current goal point x:0.0000 y:0.3750
+Current sums: head:26.0284 dist:3.8344
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 9
+Heading error 61.6716
+Distance error 0.0345
+Current goal point x:0.0000 y:0.3750
+Current sums: head:27.1048 dist:3.8689
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 9
+Heading error 72.9295
+Distance error 0.0318
+Current goal point x:0.0000 y:0.3750
+Current sums: head:28.3776 dist:3.9007
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 9
+Heading error 85.2986
+Distance error 0.0304
+Current goal point x:0.0000 y:0.3750
+Current sums: head:29.8664 dist:3.9311
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 9
+Heading error 98.5582
+Distance error 0.0307
+Current goal point x:0.0000 y:0.3750
+Current sums: head:31.5866 dist:3.9618
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 9
+Heading error 110.9940
+Distance error 0.0325
+Current goal point x:0.0000 y:0.3750
+Current sums: head:33.5238 dist:3.9943
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 9
+Heading error 120.1234
+Distance error 0.0351
+Current goal point x:0.0000 y:0.3750
+Current sums: head:35.6203 dist:4.0293
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 9
+Heading error 129.2124
+Distance error 0.0391
+Current goal point x:0.0000 y:0.3750
+Current sums: head:37.8755 dist:4.0684
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 9
+Heading error 136.0564
+Distance error 0.0438
+Current goal point x:0.0000 y:0.3750
+Current sums: head:40.2501 dist:4.1122
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 9
+Heading error 141.0502
+Distance error 0.0483
+Current goal point x:0.0000 y:0.3750
+Current sums: head:42.7119 dist:4.1606
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 9
+Heading error 147.1764
+Distance error 0.0556
+Current goal point x:0.0000 y:0.3750
+Current sums: head:45.2806 dist:4.2162
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 9
+Heading error 150.6638
+Distance error 0.0616
+Current goal point x:0.0000 y:0.3750
+Current sums: head:47.9102 dist:4.2778
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 9
+Heading error 153.9923
+Distance error 0.0687
+Current goal point x:0.0000 y:0.3750
+Current sums: head:50.5979 dist:4.3466
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 9
+Heading error 157.0244
+Distance error 0.0769
+Current goal point x:0.0000 y:0.3750
+Current sums: head:53.3385 dist:4.4235
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 9
+Heading error 160.1502
+Distance error 0.0872
+Current goal point x:0.0000 y:0.3750
+Current sums: head:56.1336 dist:4.5107
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 9
+Heading error 162.0213
+Distance error 0.0957
+Current goal point x:0.0000 y:0.3750
+Current sums: head:58.9614 dist:4.6063
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 9
+Heading error 164.1602
+Distance error 0.1081
+Current goal point x:0.0000 y:0.3750
+Current sums: head:61.8266 dist:4.7145
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 9
+Heading error 165.5060
+Distance error 0.1188
+Current goal point x:0.0000 y:0.3750
+Current sums: head:64.7152 dist:4.8332
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 9
+Heading error 167.0412
+Distance error 0.1304
+Current goal point x:0.0000 y:0.3750
+Current sums: head:67.6306 dist:4.9637
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 9
+Heading error 168.3938
+Distance error 0.1451
+Current goal point x:0.0000 y:0.3750
+Current sums: head:70.5696 dist:5.1087
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 9
+Heading error 169.3881
+Distance error 0.1588
+Current goal point x:0.0000 y:0.3750
+Current sums: head:73.5260 dist:5.2675
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.22right:0.22
+
+Goal index 9
+Heading error 170.1374
+Distance error 0.1726
+Current goal point x:0.0000 y:0.3750
+Current sums: head:76.4955 dist:5.4401
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 9
+Heading error 170.8731
+Distance error 0.1884
+Current goal point x:0.0000 y:0.3750
+Current sums: head:79.4778 dist:5.6285
+    Driving - Stop due to overshoot
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 9
+Heading error 171.7978
+Distance error 0.2081
+Current goal point x:0.0000 y:0.3750
+Current sums: head:82.4762 dist:5.8366
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 10
+Heading error 113.1569
+Distance error 0.3819
+Current goal point x:0.2000 y:0.1167
+Current sums: head:1.9750 dist:0.0000
+    Turning - Right
+speeds: left:0.20right:-0.20
+
+Goal index 10
+Heading error 113.2112
+Distance error 0.3826
+Current goal point x:0.2000 y:0.1167
+Current sums: head:3.9509 dist:0.0000
+    Turning - Right
+speeds: left:0.21right:-0.21
+
+Goal index 10
+Heading error 112.0948
+Distance error 0.3826
+Current goal point x:0.2000 y:0.1167
+Current sums: head:5.9073 dist:0.0000
+    Turning - Right
+speeds: left:0.21right:-0.21
+
+Goal index 10
+Heading error 104.8940
+Distance error 0.3826
+Current goal point x:0.2000 y:0.1167
+Current sums: head:7.7380 dist:0.0000
+    Turning - Right
+speeds: left:0.20right:-0.20
+
+Goal index 10
+Heading error 99.4436
+Distance error 0.3826
+Current goal point x:0.2000 y:0.1167
+Current sums: head:9.4737 dist:0.0000
+    Turning - Right
+speeds: left:0.20right:-0.20
+
+Goal index 10
+Heading error 91.7288
+Distance error 0.3826
+Current goal point x:0.2000 y:0.1167
+Current sums: head:11.0746 dist:0.0000
+    Turning - Right
+speeds: left:0.19right:-0.19
+
+Goal index 10
+Heading error 84.9990
+Distance error 0.3826
+Current goal point x:0.2000 y:0.1167
+Current sums: head:12.5581 dist:0.0000
+    Turning - Right
+speeds: left:0.18right:-0.18
+
+Goal index 10
+Heading error 78.8741
+Distance error 0.3828
+Current goal point x:0.2000 y:0.1167
+Current sums: head:13.9348 dist:0.0000
+    Turning - Right
+speeds: left:0.17right:-0.17
+
+Goal index 10
+Heading error 72.1903
+Distance error 0.3828
+Current goal point x:0.2000 y:0.1167
+Current sums: head:15.1947 dist:0.0000
+    Turning - Right
+speeds: left:0.16right:-0.16
+
+Goal index 10
+Heading error 65.3270
+Distance error 0.3828
+Current goal point x:0.2000 y:0.1167
+Current sums: head:16.3349 dist:0.0000
+    Turning - Right
+speeds: left:0.15right:-0.15
+
+Goal index 10
+Heading error 59.7382
+Distance error 0.3833
+Current goal point x:0.2000 y:0.1167
+Current sums: head:17.3775 dist:0.0000
+    Turning - Right
+speeds: left:0.15right:-0.15
+
+Goal index 10
+Heading error 54.2131
+Distance error 0.3833
+Current goal point x:0.2000 y:0.1167
+Current sums: head:18.3237 dist:0.0000
+    Turning - Right
+speeds: left:0.14right:-0.14
+
+Goal index 10
+Heading error 49.1576
+Distance error 0.3833
+Current goal point x:0.2000 y:0.1167
+Current sums: head:19.1817 dist:0.0000
+    Turning - Right
+speeds: left:0.13right:-0.13
+
+Goal index 10
+Heading error 43.8284
+Distance error 0.3841
+Current goal point x:0.2000 y:0.1167
+Current sums: head:19.9466 dist:0.0000
+    Turning - Right
+speeds: left:0.13right:-0.13
+
+Goal index 10
+Heading error 39.1717
+Distance error 0.3841
+Current goal point x:0.2000 y:0.1167
+Current sums: head:20.6303 dist:0.0000
+    Turning - Right
+speeds: left:0.12right:-0.12
+
+Goal index 10
+Heading error 35.0503
+Distance error 0.3841
+Current goal point x:0.2000 y:0.1167
+Current sums: head:21.2420 dist:0.0000
+    Turning - Right
+speeds: left:0.11right:-0.11
+
+Goal index 10
+Heading error 30.6138
+Distance error 0.3841
+Current goal point x:0.2000 y:0.1167
+Current sums: head:21.7763 dist:0.0000
+    Turning - Right
+speeds: left:0.11right:-0.11
+
+Goal index 10
+Heading error 26.4366
+Distance error 0.3850
+Current goal point x:0.2000 y:0.1167
+Current sums: head:22.2378 dist:0.0000
+    Turning - Right
+speeds: left:0.10right:-0.10
+
+Goal index 10
+Heading error 22.6039
+Distance error 0.3850
+Current goal point x:0.2000 y:0.1167
+Current sums: head:22.6323 dist:0.0000
+    Turning - Right
+speeds: left:0.10right:-0.10
+
+Goal index 10
+Heading error 18.9507
+Distance error 0.3850
+Current goal point x:0.2000 y:0.1167
+Current sums: head:22.9630 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 10
+Heading error 15.4303
+Distance error 0.3850
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.2323 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 10
+Heading error 12.2260
+Distance error 0.3850
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.4457 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 10
+Heading error 8.7613
+Distance error 0.3860
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.5986 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 10
+Heading error 5.5013
+Distance error 0.3860
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.6946 dist:0.0000
+    Turning - Right
+speeds: left:0.09right:-0.09
+
+Goal index 10
+Heading error 2.3110
+Distance error 0.3870
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.7350 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 10
+Heading error 0.9309
+Distance error 0.3870
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.7512 dist:0.3870
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.35right:0.35
+
+Goal index 10
+Heading error 3.9807
+Distance error 0.3870
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.8207 dist:0.7739
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.36right:0.36
+
+Goal index 10
+Heading error 4.0275
+Distance error 0.3810
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.8910 dist:1.1549
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.36right:0.36
+
+Goal index 10
+Heading error 3.9023
+Distance error 0.3580
+Current goal point x:0.2000 y:0.1167
+Current sums: head:23.9591 dist:1.5129
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.34right:0.34
+
+Goal index 10
+Heading error 5.1349
+Distance error 0.3261
+Current goal point x:0.2000 y:0.1167
+Current sums: head:24.0487 dist:1.8391
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.32right:0.32
+
+Goal index 10
+Heading error 6.7768
+Distance error 0.2993
+Current goal point x:0.2000 y:0.1167
+Current sums: head:24.1670 dist:2.1384
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.30right:0.30
+
+Goal index 10
+Heading error 7.7886
+Distance error 0.2735
+Current goal point x:0.2000 y:0.1167
+Current sums: head:24.3029 dist:2.4119
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.28right:0.28
+
+Goal index 10
+Heading error 8.8124
+Distance error 0.2458
+Current goal point x:0.2000 y:0.1167
+Current sums: head:24.4567 dist:2.6577
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.26right:0.26
+
+Goal index 10
+Heading error 9.6919
+Distance error 0.2241
+Current goal point x:0.2000 y:0.1167
+Current sums: head:24.6259 dist:2.8819
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.24right:0.24
+
+Goal index 10
+Heading error 10.5838
+Distance error 0.2054
+Current goal point x:0.2000 y:0.1167
+Current sums: head:24.8106 dist:3.0873
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.23right:0.23
+
+Goal index 10
+Heading error 12.0681
+Distance error 0.1839
+Current goal point x:0.2000 y:0.1167
+Current sums: head:25.0212 dist:3.2712
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 10
+Heading error 13.3810
+Distance error 0.1663
+Current goal point x:0.2000 y:0.1167
+Current sums: head:25.2548 dist:3.4375
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.20right:0.20
+
+Goal index 10
+Heading error 14.9005
+Distance error 0.1508
+Current goal point x:0.2000 y:0.1167
+Current sums: head:25.5149 dist:3.5882
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 10
+Heading error 17.0104
+Distance error 0.1335
+Current goal point x:0.2000 y:0.1167
+Current sums: head:25.8117 dist:3.7217
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 10
+Heading error 18.9811
+Distance error 0.1202
+Current goal point x:0.2000 y:0.1167
+Current sums: head:26.1430 dist:3.8419
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 10
+Heading error 21.1902
+Distance error 0.1080
+Current goal point x:0.2000 y:0.1167
+Current sums: head:26.5129 dist:3.9498
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 10
+Heading error 24.4301
+Distance error 0.0941
+Current goal point x:0.2000 y:0.1167
+Current sums: head:26.9392 dist:4.0440
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 10
+Heading error 27.5489
+Distance error 0.0842
+Current goal point x:0.2000 y:0.1167
+Current sums: head:27.4201 dist:4.1282
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 10
+Heading error 31.6805
+Distance error 0.0747
+Current goal point x:0.2000 y:0.1167
+Current sums: head:27.9730 dist:4.2029
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 10
+Heading error 37.9151
+Distance error 0.0640
+Current goal point x:0.2000 y:0.1167
+Current sums: head:28.6347 dist:4.2668
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 10
+Heading error 44.0588
+Distance error 0.0564
+Current goal point x:0.2000 y:0.1167
+Current sums: head:29.4037 dist:4.3233
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 10
+Heading error 52.1290
+Distance error 0.0497
+Current goal point x:0.2000 y:0.1167
+Current sums: head:30.3135 dist:4.3730
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 10
+Heading error 61.3085
+Distance error 0.0448
+Current goal point x:0.2000 y:0.1167
+Current sums: head:31.3836 dist:4.4178
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 10
+Heading error 71.1753
+Distance error 0.0415
+Current goal point x:0.2000 y:0.1167
+Current sums: head:32.6258 dist:4.4593
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 10
+Heading error 80.9493
+Distance error 0.0399
+Current goal point x:0.2000 y:0.1167
+Current sums: head:34.0386 dist:4.4992
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 10
+Heading error 94.0172
+Distance error 0.0395
+Current goal point x:0.2000 y:0.1167
+Current sums: head:35.6796 dist:4.5387
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 10
+Heading error 105.3306
+Distance error 0.0408
+Current goal point x:0.2000 y:0.1167
+Current sums: head:37.5179 dist:4.5795
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 10
+Heading error 114.4148
+Distance error 0.0432
+Current goal point x:0.2000 y:0.1167
+Current sums: head:39.5148 dist:4.6227
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 10
+Heading error 124.2451
+Distance error 0.0476
+Current goal point x:0.2000 y:0.1167
+Current sums: head:41.6833 dist:4.6704
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 10
+Heading error 131.4787
+Distance error 0.0526
+Current goal point x:0.2000 y:0.1167
+Current sums: head:43.9781 dist:4.7229
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 10
+Heading error 137.4182
+Distance error 0.0582
+Current goal point x:0.2000 y:0.1167
+Current sums: head:46.3765 dist:4.7811
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 10
+Heading error 143.3419
+Distance error 0.0659
+Current goal point x:0.2000 y:0.1167
+Current sums: head:48.8782 dist:4.8470
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 10
+Heading error 147.7040
+Distance error 0.0733
+Current goal point x:0.2000 y:0.1167
+Current sums: head:51.4562 dist:4.9203
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 10
+Heading error 151.9656
+Distance error 0.0829
+Current goal point x:0.2000 y:0.1167
+Current sums: head:54.1085 dist:5.0032
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 10
+Heading error 154.6333
+Distance error 0.0909
+Current goal point x:0.2000 y:0.1167
+Current sums: head:56.8073 dist:5.0941
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.16right:0.16
+
+Goal index 10
+Heading error 157.1141
+Distance error 0.1009
+Current goal point x:0.2000 y:0.1167
+Current sums: head:59.5495 dist:5.1950
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.17right:0.17
+
+Goal index 10
+Heading error 159.0130
+Distance error 0.1111
+Current goal point x:0.2000 y:0.1167
+Current sums: head:62.3248 dist:5.3061
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.18right:0.18
+
+Goal index 10
+Heading error 161.3209
+Distance error 0.1243
+Current goal point x:0.2000 y:0.1167
+Current sums: head:65.1404 dist:5.4304
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.19right:0.19
+
+Goal index 10
+Heading error 162.9966
+Distance error 0.1367
+Current goal point x:0.2000 y:0.1167
+Current sums: head:67.9852 dist:5.5671
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.21right:0.21
+
+Goal index 10
+Heading error 164.7526
+Distance error 0.1501
+Current goal point x:0.2000 y:0.1167
+Current sums: head:70.8607 dist:5.7172
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.22right:0.22
+
+Goal index 10
+Heading error 166.3322
+Distance error 0.1676
+Current goal point x:0.2000 y:0.1167
+Current sums: head:73.7637 dist:5.8848
+    Driving - Stop due to overshoot
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 10
+Heading error 167.4008
+Distance error 0.1822
+Current goal point x:0.2000 y:0.1167
+Current sums: head:76.6854 dist:6.0669
+    New goal
+speeds: left:0.00right:0.00
+
+Goal index 11
+Heading error 35.3734
+Distance error 0.1628
+Current goal point x:0.5000 y:0.0000
+Current sums: head:0.6174 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 35.7716
+Distance error 0.1611
+Current goal point x:0.5000 y:0.0000
+Current sums: head:1.2417 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 33.0531
+Distance error 0.1620
+Current goal point x:0.5000 y:0.0000
+Current sums: head:1.8186 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 31.7617
+Distance error 0.1620
+Current goal point x:0.5000 y:0.0000
+Current sums: head:2.3729 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 29.3578
+Distance error 0.1628
+Current goal point x:0.5000 y:0.0000
+Current sums: head:2.8853 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 26.9398
+Distance error 0.1620
+Current goal point x:0.5000 y:0.0000
+Current sums: head:3.3555 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 24.0783
+Distance error 0.1629
+Current goal point x:0.5000 y:0.0000
+Current sums: head:3.7758 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 20.7760
+Distance error 0.1629
+Current goal point x:0.5000 y:0.0000
+Current sums: head:4.1384 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 17.8432
+Distance error 0.1629
+Current goal point x:0.5000 y:0.0000
+Current sums: head:4.4498 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 14.7403
+Distance error 0.1638
+Current goal point x:0.5000 y:0.0000
+Current sums: head:4.7071 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 11.5373
+Distance error 0.1638
+Current goal point x:0.5000 y:0.0000
+Current sums: head:4.9084 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 8.6638
+Distance error 0.1638
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.0596 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 5.2529
+Distance error 0.1648
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.1513 dist:0.0000
+    Turning - Left
+speeds: left:-0.09right:0.09
+
+Goal index 11
+Heading error 2.0647
+Distance error 0.1648
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.1874 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+Goal index 11
+Heading error 0.9397
+Distance error 0.1658
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.2038 dist:0.1658
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 11
+Heading error 1.2753
+Distance error 0.1648
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.2260 dist:0.3307
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 11
+Heading error 1.0415
+Distance error 0.1608
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.2442 dist:0.4915
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 11
+Heading error 1.9566
+Distance error 0.1518
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.2783 dist:0.6433
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.15right:0.15
+
+Goal index 11
+Heading error 2.8017
+Distance error 0.1419
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.3272 dist:0.7852
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.14right:0.14
+
+Goal index 11
+Heading error 3.4789
+Distance error 0.1299
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.3880 dist:0.9151
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.13right:0.13
+
+Goal index 11
+Heading error 3.7107
+Distance error 0.1209
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.4527 dist:1.0360
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 11
+Heading error 4.0233
+Distance error 0.1119
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.5229 dist:1.1479
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.12right:0.12
+
+Goal index 11
+Heading error 4.6552
+Distance error 0.1009
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.6042 dist:1.2488
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.11right:0.11
+
+Goal index 11
+Heading error 5.5166
+Distance error 0.0930
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.7005 dist:1.3418
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 11
+Heading error 6.3508
+Distance error 0.0850
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.8113 dist:1.4268
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.10right:0.10
+
+Goal index 11
+Heading error 7.0784
+Distance error 0.0761
+Current goal point x:0.5000 y:0.0000
+Current sums: head:5.9349 dist:1.5029
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 11
+Heading error 7.7460
+Distance error 0.0691
+Current goal point x:0.5000 y:0.0000
+Current sums: head:6.0701 dist:1.5720
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.09right:0.09
+
+Goal index 11
+Heading error 8.9481
+Distance error 0.0622
+Current goal point x:0.5000 y:0.0000
+Current sums: head:6.2262 dist:1.6343
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 11
+Heading error 9.8366
+Distance error 0.0553
+Current goal point x:0.5000 y:0.0000
+Current sums: head:6.3979 dist:1.6896
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.08right:0.08
+
+Goal index 11
+Heading error 11.2834
+Distance error 0.0494
+Current goal point x:0.5000 y:0.0000
+Current sums: head:6.5948 dist:1.7390
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 11
+Heading error 12.7990
+Distance error 0.0435
+Current goal point x:0.5000 y:0.0000
+Current sums: head:6.8182 dist:1.7825
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.07right:0.07
+
+Goal index 11
+Heading error 14.7627
+Distance error 0.0377
+Current goal point x:0.5000 y:0.0000
+Current sums: head:7.0759 dist:1.8202
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.06right:0.06
+
+Goal index 11
+Heading error 16.4416
+Distance error 0.0339
+Current goal point x:0.5000 y:0.0000
+Current sums: head:7.3628 dist:1.8541
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.06right:0.06
+
+Goal index 11
+Heading error 19.3762
+Distance error 0.0291
+Current goal point x:0.5000 y:0.0000
+Current sums: head:7.7010 dist:1.8832
+    Driving - Stop
+Real update to previous distance error
+speeds: left:0.00right:0.00
+
+Goal index 11
+Heading error 22.3494
+Distance error 0.0254
+Current goal point x:0.5000 y:0.0000
+Current sums: head:8.0911 dist:1.9086
+    New goal
+End of goal points

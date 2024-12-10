@@ -1,0 +1,246 @@
+input a String x
+Successfully read file: /home/smart1/new_CPE-MAE_412/path_creator/csv paths/X.csv
+     0   600
+   450     0
+   225   300
+   450   600
+     0     0
+
+WARNING:  port in use.  Closing.
+Data Logger Initialized
+That com port is in use.   Closing it.
+Establishing connection to Roomba...
+Opening connection to Roomba...
+Setting Roomba to Control Mode...
+I am alive if my two outboard lights came on
+
+confirmation =
+
+  1×0 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> row vector
+
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:0.0000
+    Turning - Stop
+Previous distance error set to 1000
+speeds: left:0.00right:0.00
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:1.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.94right:0.94
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:2.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:0.99right:0.99
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:3.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.03right:1.03
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:4.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.08right:1.08
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:5.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.12right:1.12
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:6.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.17right:1.17
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:7.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.21right:1.21
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:8.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.26right:1.26
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:9.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.30right:1.30
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:10.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.35right:1.35
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:11.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.40right:1.40
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:12.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.44right:1.44
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:13.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.49right:1.49
+
+CreateBytesAvailable =
+
+     0
+
+
+Goal index 1
+Heading error 0.0000
+Distance error 1.0000
+Current goal point x:1.0000 y:0.0000
+Current sums: head:0.0000 dist:14.0000
+    Driving - Moving
+Real update to previous distance error
+speeds: left:1.53right:1.53
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('serial/igetfield')" style="font-weight:bold">serial/igetfield</a>
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('serial/isvalid', '/home/smart1/MATLAB/toolbox/matlab/serial/@serial/isvalid.m', 31)" style="font-weight:bold">serial/isvalid</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/matlab/serial/@serial/isvalid.m',31,0)">line 31</a>)
+    jobject = igetfield(obj, 'jobject');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('serial/get', '/home/smart1/MATLAB/toolbox/matlab/serial/@serial/get.m', 46)" style="font-weight:bold">serial/get</a> (<a href="matlab: opentoline('/home/smart1/MATLAB/toolbox/matlab/serial/@serial/get.m',46,0)">line 46</a>)
+if ~all(isvalid(obj))
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Read_Logger_2', '/home/smart1/new_CPE-MAE_412/matlab/Read_Logger_2.m', 28)" style="font-weight:bold">Read_Logger_2</a> (<a href="matlab: opentoline('/home/smart1/new_CPE-MAE_412/matlab/Read_Logger_2.m',28,0)">line 28</a>)
+LoggerBytesAvailable=get(S_Logger, 'BytesAvailable');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smart', '/home/smart1/new_CPE-MAE_412/matlab/smart.m', 115)" style="font-weight:bold">smart</a> (<a href="matlab: opentoline('/home/smart1/new_CPE-MAE_412/matlab/smart.m',115,0)">line 115</a>)
+        [SD.Logger_Counter(i), SD.Ax(i), SD.Ay(i), SD.Az(i), Raw_P, Raw_Q, Raw_R, Raw_Mx, Raw_My, Raw_Mz, SD.IMU_T(i), A2D_Ch1, A2D_Ch2, SD.RF_F(i), SD.RF_FL(i), SD.RF_L(i), SD.RF_B(i), SD.RF_R(i), SD.RF_FR(i)] = Read_Logger_2(S_Logger,SD.Logger_Counter(i-1),SD.Ax(i-1),SD.Ay(i-1),SD.Az(i-1),Raw_P, Raw_Q, Raw_R, Raw_Mx, Raw_My, Raw_Mz, SD.IMU_T(i-1), A2D_Ch1, A2D_Ch2, SD.RF_F(i-1), SD.RF_FL(i-1), SD.RF_L(i-1), SD.RF_B(i-1), SD.RF_R(i-1), SD.RF_FR(i-1));
+} 
+smart
