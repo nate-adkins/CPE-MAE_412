@@ -51,6 +51,3 @@ successful.
 - [x] Heading and distance PID controllers
 - [x] EKF for better data
 - [x] Log files to debugging
-
-small error with r
-fix t 
